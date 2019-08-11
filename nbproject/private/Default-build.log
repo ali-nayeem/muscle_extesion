@@ -1,0 +1,250 @@
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  aligngivenpath.cpp -o aligngivenpath.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  aligngivenpathsw.cpp -o aligngivenpathsw.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  aligntwomsas.cpp -o aligntwomsas.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  aligntwoprofs.cpp -o aligntwoprofs.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  aln.cpp -o aln.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  alpha.cpp -o alpha.o
+alpha.cpp:84:10: warning: enumeration value 'ALPHA_Undefined' not handled in switch [-Wswitch]
+        switch (Alpha)
+                ^
+alpha.cpp:84:10: note: add missing switch cases
+        switch (Alpha)
+                ^
+1 warning generated.
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  anchors.cpp -o anchors.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  bittraceback.cpp -o bittraceback.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  blosum62.cpp -o blosum62.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  blosumla.cpp -o blosumla.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  clust.cpp -o clust.o
+clust.cpp:167:10: warning: enumeration value 'JOIN_Undefined' not handled in switch [-Wswitch]
+        switch (m_JoinStyle)
+                ^
+clust.cpp:167:10: note: add missing switch cases
+        switch (m_JoinStyle)
+                ^
+clust.cpp:295:10: warning: enumeration value 'LINKAGE_Undefined' not handled in switch [-Wswitch]
+        switch (m_CentroidStyle)
+                ^
+clust.cpp:295:10: note: add missing switch cases
+        switch (m_CentroidStyle)
+                ^
+clust.cpp:611:10: warning: enumeration value 'JOIN_Undefined' not handled in switch [-Wswitch]
+        switch (m_JoinStyle)
+                ^
+clust.cpp:611:10: note: add missing switch cases
+        switch (m_JoinStyle)
+                ^
+3 warnings generated.
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  cluster.cpp -o cluster.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  clwwt.cpp -o clwwt.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  color.cpp -o color.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  cons.cpp -o cons.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  diaglist.cpp -o diaglist.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  diffobjscore.cpp -o diffobjscore.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  diffpaths.cpp -o diffpaths.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  difftrees.cpp -o difftrees.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  difftreese.cpp -o difftreese.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  distcalc.cpp -o distcalc.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  distfunc.cpp -o distfunc.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  distpwkimura.cpp -o distpwkimura.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  domuscle.cpp -o domuscle.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  dosp.cpp -o dosp.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  dpreglist.cpp -o dpreglist.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  drawtree.cpp -o drawtree.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  edgelist.cpp -o edgelist.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  enumopts.cpp -o enumopts.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  enumtostr.cpp -o enumtostr.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  estring.cpp -o estring.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  fasta.cpp -o fasta.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  fasta2.cpp -o fasta2.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  fastclust.cpp -o fastclust.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  fastdist.cpp -o fastdist.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  fastdistjones.cpp -o fastdistjones.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  fastdistkbit.cpp -o fastdistkbit.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  fastdistkmer.cpp -o fastdistkmer.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  fastdistmafft.cpp -o fastdistmafft.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  fastdistnuc.cpp -o fastdistnuc.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  fastscorepath2.cpp -o fastscorepath2.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  finddiags.cpp -o finddiags.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  finddiagsn.cpp -o finddiagsn.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  glbalign.cpp -o glbalign.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  glbalign352.cpp -o glbalign352.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  glbaligndiag.cpp -o glbaligndiag.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  glbalignle.cpp -o glbalignle.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  glbalignsimple.cpp -o glbalignsimple.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  glbalignsp.cpp -o glbalignsp.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  glbalignspn.cpp -o glbalignspn.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  glbalignss.cpp -o glbalignss.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  glbalndimer.cpp -o glbalndimer.o
+glbalndimer.cpp:123:10: warning: enumeration values 'PPSCORE_Undefined' and 'PPSCORE_SPN' not handled in switch [-Wswitch]
+        switch (g_PPScore)
+                ^
+glbalndimer.cpp:123:10: note: add missing switch cases
+        switch (g_PPScore)
+                ^
+1 warning generated.
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  globals.cpp -o globals.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  globalslinux.cpp -o globalslinux.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  globalsosx.cpp -o globalsosx.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  globalsother.cpp -o globalsother.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  globalswin32.cpp -o globalswin32.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  gonnet.cpp -o gonnet.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  henikoffweight.cpp -o henikoffweight.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  henikoffweightpb.cpp -o henikoffweightpb.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  html.cpp -o html.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  hydro.cpp -o hydro.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  intmath.cpp -o intmath.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  local.cpp -o local.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  main.cpp -o main.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  makerootmsa.cpp -o makerootmsa.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  makerootmsab.cpp -o makerootmsab.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  maketree.cpp -o maketree.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  mhack.cpp -o mhack.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  mpam200.cpp -o mpam200.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  msa.cpp -o msa.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  msa2.cpp -o msa2.o
+msa2.cpp:357:10: warning: enumeration value 'SEQWEIGHT_Undefined' not handled in switch [-Wswitch]
+        switch (Method)
+                ^
+msa2.cpp:357:10: note: add missing switch cases
+        switch (Method)
+                ^
+1 warning generated.
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  msadistkimura.cpp -o msadistkimura.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  msf.cpp -o msf.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  muscle.cpp -o muscle.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  muscleout.cpp -o muscleout.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  nucmx.cpp -o nucmx.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  nwdasimple.cpp -o nwdasimple.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  nwdasimple2.cpp -o nwdasimple2.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  nwdasmall.cpp -o nwdasmall.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  nwrec.cpp -o nwrec.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  nwsmall.cpp -o nwsmall.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  objscore.cpp -o objscore.o
+objscore.cpp:31:10: warning: enumeration values 'OBJSCORE_Undefined' and 'OBJSCORE_SPM' not handled in switch [-Wswitch]
+        switch (OS)
+                ^
+objscore.cpp:31:10: note: add missing switch cases
+        switch (OS)
+                ^
+1 warning generated.
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  objscore2.cpp -o objscore2.o
+objscore2.cpp:22:10: warning: enumeration value 'TERMGAPS_Undefined' not handled in switch [-Wswitch]
+        switch (g_TermGaps)
+                ^
+objscore2.cpp:22:10: note: add missing switch cases
+        switch (g_TermGaps)
+                ^
+1 warning generated.
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  objscoreda.cpp -o objscoreda.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  onexception.cpp -o onexception.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  options.cpp -o options.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  outweights.cpp -o outweights.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  pam200mafft.cpp -o pam200mafft.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  params.cpp -o params.o
+params.cpp:441:10: warning: enumeration value 'PPSCORE_Undefined' not handled in switch [-Wswitch]
+        switch (g_PPScore)
+                ^
+params.cpp:441:10: note: add missing switch cases
+        switch (g_PPScore)
+                ^
+1 warning generated.
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  phy.cpp -o phy.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  phy2.cpp -o phy2.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  phy3.cpp -o phy3.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  phy4.cpp -o phy4.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  phyfromclust.cpp -o phyfromclust.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  phyfromfile.cpp -o phyfromfile.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  physeq.cpp -o physeq.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  phytofile.cpp -o phytofile.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  posgap.cpp -o posgap.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  ppscore.cpp -o ppscore.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  profdb.cpp -o profdb.o
+In file included from profdb.cpp:9:
+In file included from ./clustsetmsa.h:8:
+./msadist.h:22:10: warning: 10 enumeration values not handled in switch: 'DISTANCE_Undefined', 'DISTANCE_Kmer6_6', 'DISTANCE_Kmer20_3'... [-Wswitch]
+                switch(m_Distance)
+                       ^
+./msadist.h:22:10: note: add missing switch cases
+                switch(m_Distance)
+                       ^
+1 warning generated.
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  profile.cpp -o profile.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  profilefrommsa.cpp -o profilefrommsa.o
+profilefrommsa.cpp:230:10: warning: enumeration value 'ALPHA_Undefined' not handled in switch [-Wswitch]
+        switch (g_Alpha)
+                ^
+profilefrommsa.cpp:230:10: note: add missing switch cases
+        switch (g_Alpha)
+                ^
+1 warning generated.
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  progalign.cpp -o progalign.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  progress.cpp -o progress.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  progressivealign.cpp -o progressivealign.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  pwpath.cpp -o pwpath.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  readmx.cpp -o readmx.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  realigndiffs.cpp -o realigndiffs.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  realigndiffse.cpp -o realigndiffse.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  refine.cpp -o refine.o
+In file included from refine.cpp:9:
+In file included from ./clustsetmsa.h:8:
+./msadist.h:22:10: warning: 10 enumeration values not handled in switch: 'DISTANCE_Undefined', 'DISTANCE_Kmer6_6', 'DISTANCE_Kmer20_3'... [-Wswitch]
+                switch(m_Distance)
+                       ^
+./msadist.h:22:10: note: add missing switch cases
+                switch(m_Distance)
+                       ^
+1 warning generated.
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  refinehoriz.cpp -o refinehoriz.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  refinesubfams.cpp -o refinesubfams.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  refinetree.cpp -o refinetree.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  refinetreee.cpp -o refinetreee.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  refinevert.cpp -o refinevert.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  refinew.cpp -o refinew.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  savebest.cpp -o savebest.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  scoredist.cpp -o scoredist.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  scoregaps.cpp -o scoregaps.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  scorehistory.cpp -o scorehistory.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  scorepp.cpp -o scorepp.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  seq.cpp -o seq.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  seqvect.cpp -o seqvect.o
+seqvect.cpp:201:17: warning: binding dereferenced null pointer to reference has undefined behavior [-Wnull-dereference]
+        return (Seq &) *((Seq *) 0);
+                       ^~~~~~~~~~~~
+1 warning generated.
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  setblosumweights.cpp -o setblosumweights.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  setgscweights.cpp -o setgscweights.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  setnewhandler.cpp -o setnewhandler.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  spfast.cpp -o spfast.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  sptest.cpp -o sptest.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  stabilize.cpp -o stabilize.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  subfam.cpp -o subfam.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  subfams.cpp -o subfams.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  sw.cpp -o sw.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  termgaps.cpp -o termgaps.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  textfile.cpp -o textfile.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  threewaywt.cpp -o threewaywt.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  tomhydro.cpp -o tomhydro.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  traceback.cpp -o traceback.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  tracebackopt.cpp -o tracebackopt.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  tracebacksw.cpp -o tracebacksw.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  treefrommsa.cpp -o treefrommsa.o
+In file included from treefrommsa.cpp:5:
+In file included from ./clustsetmsa.h:8:
+./msadist.h:22:10: warning: 10 enumeration values not handled in switch: 'DISTANCE_Undefined', 'DISTANCE_Kmer6_6', 'DISTANCE_Kmer20_3'... [-Wswitch]
+                switch(m_Distance)
+                       ^
+./msadist.h:22:10: note: add missing switch cases
+                switch(m_Distance)
+                       ^
+1 warning generated.
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  typetostr.cpp -o typetostr.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  upgma2.cpp -o upgma2.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  usage.cpp -o usage.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  validateids.cpp -o validateids.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  vtml2.cpp -o vtml2.o
+g++ -c -O3 -funroll-loops -Winline -DNDEBUG=1  writescorefile.cpp -o writescorefile.o
+g++ -O3 -funroll-loops -Winline -DNDEBUG=1 -o muscle aligngivenpath.o aligngivenpathsw.o aligntwomsas.o aligntwoprofs.o aln.o alpha.o anchors.o bittraceback.o blosum62.o blosumla.o clust.o cluster.o clwwt.o color.o cons.o diaglist.o diffobjscore.o diffpaths.o difftrees.o difftreese.o distcalc.o distfunc.o distpwkimura.o domuscle.o dosp.o dpreglist.o drawtree.o edgelist.o enumopts.o enumtostr.o estring.o fasta.o fasta2.o fastclust.o fastdist.o fastdistjones.o fastdistkbit.o fastdistkmer.o fastdistmafft.o fastdistnuc.o fastscorepath2.o finddiags.o finddiagsn.o glbalign.o glbalign352.o glbaligndiag.o glbalignle.o glbalignsimple.o glbalignsp.o glbalignspn.o glbalignss.o glbalndimer.o globals.o globalslinux.o globalsosx.o globalsother.o globalswin32.o gonnet.o henikoffweight.o henikoffweightpb.o html.o hydro.o intmath.o local.o main.o makerootmsa.o makerootmsab.o maketree.o mhack.o mpam200.o msa.o msa2.o msadistkimura.o msf.o muscle.o muscleout.o nucmx.o nwdasimple.o nwdasimple2.o nwdasmall.o nwrec.o nwsmall.o objscore.o objscore2.o objscoreda.o onexception.o options.o outweights.o pam200mafft.o params.o phy.o phy2.o phy3.o phy4.o phyfromclust.o phyfromfile.o physeq.o phytofile.o posgap.o ppscore.o profdb.o profile.o profilefrommsa.o progalign.o progress.o progressivealign.o pwpath.o readmx.o realigndiffs.o realigndiffse.o refine.o refinehoriz.o refinesubfams.o refinetree.o refinetreee.o refinevert.o refinew.o savebest.o scoredist.o scoregaps.o scorehistory.o scorepp.o seq.o seqvect.o setblosumweights.o setgscweights.o setnewhandler.o spfast.o sptest.o stabilize.o subfam.o subfams.o sw.o termgaps.o textfile.o threewaywt.o tomhydro.o traceback.o tracebackopt.o tracebacksw.o treefrommsa.o typetostr.o upgma2.o usage.o validateids.o vtml2.o writescorefile.o -lm -static
+ld: library not found for -lcrt0.o
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [muscle] Error 1
