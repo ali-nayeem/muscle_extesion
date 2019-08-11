@@ -1,0 +1,933 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BDFD545A22FD3DD100769564 /* cons.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53A222FD3DC400769564 /* cons.cpp */; };
+		BDFD545B22FD3DD100769564 /* mhack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53A322FD3DC400769564 /* mhack.cpp */; };
+		BDFD545C22FD3DD100769564 /* aligngivenpathsw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53A422FD3DC400769564 /* aligngivenpathsw.cpp */; };
+		BDFD545D22FD3DD100769564 /* muscleout.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53A522FD3DC400769564 /* muscleout.cpp */; };
+		BDFD545E22FD3DD100769564 /* seqvect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53A622FD3DC400769564 /* seqvect.cpp */; };
+		BDFD545F22FD3DD100769564 /* clust.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53A722FD3DC400769564 /* clust.cpp */; };
+		BDFD546022FD3DD100769564 /* diaglist.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53A822FD3DC400769564 /* diaglist.cpp */; };
+		BDFD546122FD3DD100769564 /* phy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53A922FD3DC400769564 /* phy.cpp */; };
+		BDFD546222FD3DD100769564 /* domuscle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53AA22FD3DC400769564 /* domuscle.cpp */; };
+		BDFD546322FD3DD100769564 /* profilefrommsa.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53AB22FD3DC500769564 /* profilefrommsa.cpp */; };
+		BDFD546422FD3DD100769564 /* tracebacksw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53AC22FD3DC500769564 /* tracebacksw.cpp */; };
+		BDFD546522FD3DD100769564 /* typetostr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53AF22FD3DC500769564 /* typetostr.cpp */; };
+		BDFD546622FD3DD100769564 /* posgap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53B222FD3DC500769564 /* posgap.cpp */; };
+		BDFD546722FD3DD100769564 /* bittraceback.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53B522FD3DC500769564 /* bittraceback.cpp */; };
+		BDFD546822FD3DD100769564 /* glbalign.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53B622FD3DC500769564 /* glbalign.cpp */; };
+		BDFD546922FD3DD100769564 /* objscore2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53B722FD3DC500769564 /* objscore2.cpp */; };
+		BDFD546A22FD3DD100769564 /* dosp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53BA22FD3DC500769564 /* dosp.cpp */; };
+		BDFD546B22FD3DD100769564 /* distcalc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53BB22FD3DC500769564 /* distcalc.cpp */; };
+		BDFD546C22FD3DD100769564 /* fastdistkbit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53BC22FD3DC500769564 /* fastdistkbit.cpp */; };
+		BDFD546D22FD3DD100769564 /* glbalignspn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53BD22FD3DC500769564 /* glbalignspn.cpp */; };
+		BDFD546E22FD3DD100769564 /* subfams.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53BE22FD3DC500769564 /* subfams.cpp */; };
+		BDFD546F22FD3DD100769564 /* stabilize.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53BF22FD3DC600769564 /* stabilize.cpp */; };
+		BDFD547022FD3DD100769564 /* setblosumweights.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53C022FD3DC600769564 /* setblosumweights.cpp */; };
+		BDFD547122FD3DD100769564 /* phy2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53C122FD3DC600769564 /* phy2.cpp */; };
+		BDFD547222FD3DD100769564 /* setnewhandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53C322FD3DC600769564 /* setnewhandler.cpp */; };
+		BDFD547322FD3DD100769564 /* glbalignsimple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53C422FD3DC600769564 /* glbalignsimple.cpp */; };
+		BDFD547422FD3DD100769564 /* refinetreee.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53C522FD3DC600769564 /* refinetreee.cpp */; };
+		BDFD547522FD3DD100769564 /* pam200mafft.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53C622FD3DC600769564 /* pam200mafft.cpp */; };
+		BDFD547622FD3DD100769564 /* nwsmall.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53C822FD3DC600769564 /* nwsmall.cpp */; };
+		BDFD547722FD3DD100769564 /* traceback.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53C922FD3DC600769564 /* traceback.cpp */; };
+		BDFD547822FD3DD100769564 /* difftreese.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53CA22FD3DC600769564 /* difftreese.cpp */; };
+		BDFD547922FD3DD100769564 /* profile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53CB22FD3DC600769564 /* profile.cpp */; };
+		BDFD547A22FD3DD100769564 /* aligntwomsas.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53CC22FD3DC600769564 /* aligntwomsas.cpp */; };
+		BDFD547B22FD3DD100769564 /* nucmx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53CD22FD3DC700769564 /* nucmx.cpp */; };
+		BDFD547C22FD3DD100769564 /* alpha.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53CE22FD3DC700769564 /* alpha.cpp */; };
+		BDFD547D22FD3DD100769564 /* henikoffweightpb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53CF22FD3DC700769564 /* henikoffweightpb.cpp */; };
+		BDFD547E22FD3DD100769564 /* scoregaps.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53D022FD3DC700769564 /* scoregaps.cpp */; };
+		BDFD547F22FD3DD100769564 /* gonnet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53D122FD3DC700769564 /* gonnet.cpp */; };
+		BDFD548022FD3DD100769564 /* savebest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53D322FD3DC700769564 /* savebest.cpp */; };
+		BDFD548122FD3DD100769564 /* clwwt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53D422FD3DC700769564 /* clwwt.cpp */; };
+		BDFD548222FD3DD100769564 /* nwdasimple2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53D522FD3DC700769564 /* nwdasimple2.cpp */; };
+		BDFD548322FD3DD100769564 /* treefrommsa.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53D822FD3DC700769564 /* treefrommsa.cpp */; };
+		BDFD548422FD3DD100769564 /* makerootmsab.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53D922FD3DC700769564 /* makerootmsab.cpp */; };
+		BDFD548522FD3DD100769564 /* sw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53DA22FD3DC800769564 /* sw.cpp */; };
+		BDFD548622FD3DD100769564 /* intmath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53DB22FD3DC800769564 /* intmath.cpp */; };
+		BDFD548722FD3DD100769564 /* fasta.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53DC22FD3DC800769564 /* fasta.cpp */; };
+		BDFD548822FD3DD100769564 /* fastscorepath2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53DD22FD3DC800769564 /* fastscorepath2.cpp */; };
+		BDFD548922FD3DD100769564 /* phytofile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53DE22FD3DC800769564 /* phytofile.cpp */; };
+		BDFD548A22FD3DD100769564 /* globalslinux.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53DF22FD3DC800769564 /* globalslinux.cpp */; };
+		BDFD548B22FD3DD100769564 /* realigndiffse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53E022FD3DC800769564 /* realigndiffse.cpp */; };
+		BDFD548C22FD3DD100769564 /* refinehoriz.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53E122FD3DC800769564 /* refinehoriz.cpp */; };
+		BDFD548D22FD3DD100769564 /* progalign.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53E322FD3DC800769564 /* progalign.cpp */; };
+		BDFD548E22FD3DD100769564 /* henikoffweight.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53E422FD3DC800769564 /* henikoffweight.cpp */; };
+		BDFD548F22FD3DD100769564 /* dpreglist.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53E522FD3DC800769564 /* dpreglist.cpp */; };
+		BDFD549022FD3DD100769564 /* msa.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53E622FD3DC800769564 /* msa.cpp */; };
+		BDFD549122FD3DD100769564 /* glbaligndiag.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53E722FD3DC800769564 /* glbaligndiag.cpp */; };
+		BDFD549222FD3DD100769564 /* msa2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53E822FD3DC800769564 /* msa2.cpp */; };
+		BDFD549322FD3DD100769564 /* phy4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53E922FD3DC900769564 /* phy4.cpp */; };
+		BDFD549422FD3DD100769564 /* spfast.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53EA22FD3DC900769564 /* spfast.cpp */; };
+		BDFD549522FD3DD100769564 /* threewaywt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53EB22FD3DC900769564 /* threewaywt.cpp */; };
+		BDFD549622FD3DD100769564 /* fastdistkmer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53ED22FD3DC900769564 /* fastdistkmer.cpp */; };
+		BDFD549722FD3DD100769564 /* options.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53EE22FD3DC900769564 /* options.cpp */; };
+		BDFD549922FD3DD100769564 /* realigndiffs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53F022FD3DC900769564 /* realigndiffs.cpp */; };
+		BDFD549A22FD3DD100769564 /* scorepp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53F222FD3DC900769564 /* scorepp.cpp */; };
+		BDFD549B22FD3DD100769564 /* drawtree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53F322FD3DC900769564 /* drawtree.cpp */; };
+		BDFD549C22FD3DD100769564 /* tomhydro.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53F422FD3DC900769564 /* tomhydro.cpp */; };
+		BDFD549D22FD3DD100769564 /* refinetree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53F722FD3DCA00769564 /* refinetree.cpp */; };
+		BDFD549E22FD3DD100769564 /* glbalignle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53F822FD3DCA00769564 /* glbalignle.cpp */; };
+		BDFD549F22FD3DD100769564 /* upgma2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53FA22FD3DCA00769564 /* upgma2.cpp */; };
+		BDFD54A022FD3DD100769564 /* usage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53FB22FD3DCA00769564 /* usage.cpp */; };
+		BDFD54A122FD3DD100769564 /* distpwkimura.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53FC22FD3DCA00769564 /* distpwkimura.cpp */; };
+		BDFD54A222FD3DD100769564 /* validateids.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53FE22FD3DCA00769564 /* validateids.cpp */; };
+		BDFD54A322FD3DD100769564 /* fastdistmafft.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD53FF22FD3DCA00769564 /* fastdistmafft.cpp */; };
+		BDFD54A422FD3DD100769564 /* mpam200.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD540022FD3DCA00769564 /* mpam200.cpp */; };
+		BDFD54A522FD3DD100769564 /* muscle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD540122FD3DCA00769564 /* muscle.cpp */; };
+		BDFD54A622FD3DD100769564 /* vtml2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD540222FD3DCA00769564 /* vtml2.cpp */; };
+		BDFD54A722FD3DD100769564 /* enumopts.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD540322FD3DCA00769564 /* enumopts.cpp */; };
+		BDFD54A822FD3DD100769564 /* fastdistjones.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD540422FD3DCA00769564 /* fastdistjones.cpp */; };
+		BDFD54A922FD3DD100769564 /* refinesubfams.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD540622FD3DCB00769564 /* refinesubfams.cpp */; };
+		BDFD54AA22FD3DD100769564 /* blosum62.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD540922FD3DCB00769564 /* blosum62.cpp */; };
+		BDFD54AB22FD3DD100769564 /* estring.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD540A22FD3DCB00769564 /* estring.cpp */; };
+		BDFD54AC22FD3DD100769564 /* fastdistnuc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD540C22FD3DCB00769564 /* fastdistnuc.cpp */; };
+		BDFD54AD22FD3DD100769564 /* globalswin32.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD540D22FD3DCB00769564 /* globalswin32.cpp */; };
+		BDFD54AE22FD3DD100769564 /* nwdasimple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD540E22FD3DCB00769564 /* nwdasimple.cpp */; };
+		BDFD54AF22FD3DD100769564 /* anchors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD540F22FD3DCB00769564 /* anchors.cpp */; };
+		BDFD54B022FD3DD100769564 /* aligngivenpath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD541022FD3DCB00769564 /* aligngivenpath.cpp */; };
+		BDFD54B122FD3DD100769564 /* physeq.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD541122FD3DCB00769564 /* physeq.cpp */; };
+		BDFD54B222FD3DD100769564 /* pwpath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD541222FD3DCB00769564 /* pwpath.cpp */; };
+		BDFD54B322FD3DD100769564 /* difftrees.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD541322FD3DCC00769564 /* difftrees.cpp */; };
+		BDFD54B422FD3DD100769564 /* phyfromclust.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD541422FD3DCC00769564 /* phyfromclust.cpp */; };
+		BDFD54B522FD3DD100769564 /* glbalndimer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD541522FD3DCC00769564 /* glbalndimer.cpp */; };
+		BDFD54B622FD3DD100769564 /* objscoreda.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD541722FD3DCC00769564 /* objscoreda.cpp */; };
+		BDFD54B722FD3DD100769564 /* globalsother.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD541822FD3DCC00769564 /* globalsother.cpp */; };
+		BDFD54B822FD3DD100769564 /* distfunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD541922FD3DCC00769564 /* distfunc.cpp */; };
+		BDFD54B922FD3DD100769564 /* onexception.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD541A22FD3DCC00769564 /* onexception.cpp */; };
+		BDFD54BA22FD3DD100769564 /* diffobjscore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD541B22FD3DCC00769564 /* diffobjscore.cpp */; };
+		BDFD54BB22FD3DD100769564 /* refine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD541C22FD3DCC00769564 /* refine.cpp */; };
+		BDFD54BC22FD3DD100769564 /* refinew.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD541E22FD3DCC00769564 /* refinew.cpp */; };
+		BDFD54BD22FD3DD100769564 /* color.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD541F22FD3DCC00769564 /* color.cpp */; };
+		BDFD54BE22FD3DD100769564 /* subfam.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD542222FD3DCD00769564 /* subfam.cpp */; };
+		BDFD54BF22FD3DD100769564 /* globals.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD542322FD3DCD00769564 /* globals.cpp */; };
+		BDFD54C022FD3DD100769564 /* setgscweights.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD542422FD3DCD00769564 /* setgscweights.cpp */; };
+		BDFD54C122FD3DD100769564 /* fastdist.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD542522FD3DCD00769564 /* fastdist.cpp */; };
+		BDFD54C222FD3DD100769564 /* hydro.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD542622FD3DCD00769564 /* hydro.cpp */; };
+		BDFD54C322FD3DD100769564 /* textfile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD542722FD3DCD00769564 /* textfile.cpp */; };
+		BDFD54C422FD3DD100769564 /* msf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD542822FD3DCD00769564 /* msf.cpp */; };
+		BDFD54C522FD3DD100769564 /* finddiagsn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD542922FD3DCD00769564 /* finddiagsn.cpp */; };
+		BDFD54C622FD3DD100769564 /* fasta2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD542A22FD3DCD00769564 /* fasta2.cpp */; };
+		BDFD54C722FD3DD100769564 /* fastclust.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD542B22FD3DCD00769564 /* fastclust.cpp */; };
+		BDFD54C822FD3DD100769564 /* ppscore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD542C22FD3DCD00769564 /* ppscore.cpp */; };
+		BDFD54C922FD3DD100769564 /* enumtostr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD542D22FD3DCD00769564 /* enumtostr.cpp */; };
+		BDFD54CA22FD3DD100769564 /* local.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD542F22FD3DCE00769564 /* local.cpp */; };
+		BDFD54CB22FD3DD100769564 /* globalsosx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD543022FD3DCE00769564 /* globalsosx.cpp */; };
+		BDFD54CC22FD3DD100769564 /* refinevert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD543122FD3DCE00769564 /* refinevert.cpp */; };
+		BDFD54CD22FD3DD100769564 /* termgaps.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD543222FD3DCE00769564 /* termgaps.cpp */; };
+		BDFD54CE22FD3DD100769564 /* blosumla.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD543322FD3DCE00769564 /* blosumla.cpp */; };
+		BDFD54CF22FD3DD100769564 /* phyfromfile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD543422FD3DCE00769564 /* phyfromfile.cpp */; };
+		BDFD54D022FD3DD100769564 /* profdb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD543522FD3DCE00769564 /* profdb.cpp */; };
+		BDFD54D122FD3DD100769564 /* progress.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD543622FD3DCE00769564 /* progress.cpp */; };
+		BDFD54D222FD3DD100769564 /* tracebackopt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD543722FD3DCE00769564 /* tracebackopt.cpp */; };
+		BDFD54D322FD3DD100769564 /* diffpaths.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD543822FD3DCE00769564 /* diffpaths.cpp */; };
+		BDFD54D422FD3DD100769564 /* glbalignsp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD543922FD3DCE00769564 /* glbalignsp.cpp */; };
+		BDFD54D522FD3DD100769564 /* objscore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD543A22FD3DCE00769564 /* objscore.cpp */; };
+		BDFD54D622FD3DD100769564 /* writescorefile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD543B22FD3DCE00769564 /* writescorefile.cpp */; };
+		BDFD54D722FD3DD100769564 /* scoredist.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD543C22FD3DCF00769564 /* scoredist.cpp */; };
+		BDFD54D822FD3DD100769564 /* outweights.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD543D22FD3DCF00769564 /* outweights.cpp */; };
+		BDFD54D922FD3DD100769564 /* aln.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD543E22FD3DCF00769564 /* aln.cpp */; };
+		BDFD54DA22FD3DD100769564 /* scorehistory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD544022FD3DCF00769564 /* scorehistory.cpp */; };
+		BDFD54DB22FD3DD100769564 /* msadistkimura.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD544122FD3DCF00769564 /* msadistkimura.cpp */; };
+		BDFD54DC22FD3DD100769564 /* aligntwoprofs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD544222FD3DCF00769564 /* aligntwoprofs.cpp */; };
+		BDFD54DD22FD3DD100769564 /* seq.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD544322FD3DCF00769564 /* seq.cpp */; };
+		BDFD54DE22FD3DD100769564 /* html.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD544422FD3DCF00769564 /* html.cpp */; };
+		BDFD54DF22FD3DD100769564 /* readmx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD544522FD3DCF00769564 /* readmx.cpp */; };
+		BDFD54E022FD3DD100769564 /* glbalign352.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD544622FD3DCF00769564 /* glbalign352.cpp */; };
+		BDFD54E122FD3DD100769564 /* glbalignss.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD544722FD3DCF00769564 /* glbalignss.cpp */; };
+		BDFD54E222FD3DD100769564 /* nwrec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD544A22FD3DD000769564 /* nwrec.cpp */; };
+		BDFD54E322FD3DD100769564 /* params.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD544B22FD3DD000769564 /* params.cpp */; };
+		BDFD54E422FD3DD100769564 /* cluster.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD544D22FD3DD000769564 /* cluster.cpp */; };
+		BDFD54E522FD3DD100769564 /* finddiags.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD544E22FD3DD000769564 /* finddiags.cpp */; };
+		BDFD54E622FD3DD100769564 /* sptest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD544F22FD3DD000769564 /* sptest.cpp */; };
+		BDFD54E722FD3DD100769564 /* progressivealign.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD545222FD3DD000769564 /* progressivealign.cpp */; };
+		BDFD54E822FD3DD100769564 /* makerootmsa.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD545422FD3DD000769564 /* makerootmsa.cpp */; };
+		BDFD54E922FD3DD100769564 /* edgelist.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD545522FD3DD000769564 /* edgelist.cpp */; };
+		BDFD54EA22FD3DD100769564 /* nwdasmall.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD545722FD3DD100769564 /* nwdasmall.cpp */; };
+		BDFD54EB22FD3DD100769564 /* phy3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD545822FD3DD100769564 /* phy3.cpp */; };
+		BDFD54EC22FD3DD100769564 /* maketree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD545922FD3DD100769564 /* maketree.cpp */; };
+		BDFD54EE22FD3F3600769564 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFD54ED22FD3F3600769564 /* main.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BDFD512522FD3CC700769564 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BDFD512722FD3CC700769564 /* muscle */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = muscle; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDFD53A222FD3DC400769564 /* cons.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cons.cpp; sourceTree = "<group>"; };
+		BDFD53A322FD3DC400769564 /* mhack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mhack.cpp; sourceTree = "<group>"; };
+		BDFD53A422FD3DC400769564 /* aligngivenpathsw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = aligngivenpathsw.cpp; sourceTree = "<group>"; };
+		BDFD53A522FD3DC400769564 /* muscleout.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = muscleout.cpp; sourceTree = "<group>"; };
+		BDFD53A622FD3DC400769564 /* seqvect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = seqvect.cpp; sourceTree = "<group>"; };
+		BDFD53A722FD3DC400769564 /* clust.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = clust.cpp; sourceTree = "<group>"; };
+		BDFD53A822FD3DC400769564 /* diaglist.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = diaglist.cpp; sourceTree = "<group>"; };
+		BDFD53A922FD3DC400769564 /* phy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = phy.cpp; sourceTree = "<group>"; };
+		BDFD53AA22FD3DC400769564 /* domuscle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = domuscle.cpp; sourceTree = "<group>"; };
+		BDFD53AB22FD3DC500769564 /* profilefrommsa.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = profilefrommsa.cpp; sourceTree = "<group>"; };
+		BDFD53AC22FD3DC500769564 /* tracebacksw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tracebacksw.cpp; sourceTree = "<group>"; };
+		BDFD53AD22FD3DC500769564 /* clustsetdf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clustsetdf.h; sourceTree = "<group>"; };
+		BDFD53AE22FD3DC500769564 /* cluster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cluster.h; sourceTree = "<group>"; };
+		BDFD53AF22FD3DC500769564 /* typetostr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = typetostr.cpp; sourceTree = "<group>"; };
+		BDFD53B022FD3DC500769564 /* types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
+		BDFD53B122FD3DC500769564 /* clustset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clustset.h; sourceTree = "<group>"; };
+		BDFD53B222FD3DC500769564 /* posgap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = posgap.cpp; sourceTree = "<group>"; };
+		BDFD53B322FD3DC500769564 /* svnversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = svnversion.h; sourceTree = "<group>"; };
+		BDFD53B422FD3DC500769564 /* distfunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = distfunc.h; sourceTree = "<group>"; };
+		BDFD53B522FD3DC500769564 /* bittraceback.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bittraceback.cpp; sourceTree = "<group>"; };
+		BDFD53B622FD3DC500769564 /* glbalign.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = glbalign.cpp; sourceTree = "<group>"; };
+		BDFD53B722FD3DC500769564 /* objscore2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = objscore2.cpp; sourceTree = "<group>"; };
+		BDFD53B822FD3DC500769564 /* params.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = params.h; sourceTree = "<group>"; };
+		BDFD53B922FD3DC500769564 /* seq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = seq.h; sourceTree = "<group>"; };
+		BDFD53BA22FD3DC500769564 /* dosp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dosp.cpp; sourceTree = "<group>"; };
+		BDFD53BB22FD3DC500769564 /* distcalc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = distcalc.cpp; sourceTree = "<group>"; };
+		BDFD53BC22FD3DC500769564 /* fastdistkbit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fastdistkbit.cpp; sourceTree = "<group>"; };
+		BDFD53BD22FD3DC500769564 /* glbalignspn.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = glbalignspn.cpp; sourceTree = "<group>"; };
+		BDFD53BE22FD3DC500769564 /* subfams.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = subfams.cpp; sourceTree = "<group>"; };
+		BDFD53BF22FD3DC600769564 /* stabilize.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stabilize.cpp; sourceTree = "<group>"; };
+		BDFD53C022FD3DC600769564 /* setblosumweights.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = setblosumweights.cpp; sourceTree = "<group>"; };
+		BDFD53C122FD3DC600769564 /* phy2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = phy2.cpp; sourceTree = "<group>"; };
+		BDFD53C222FD3DC600769564 /* msadistkimura.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = msadistkimura.h; sourceTree = "<group>"; };
+		BDFD53C322FD3DC600769564 /* setnewhandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = setnewhandler.cpp; sourceTree = "<group>"; };
+		BDFD53C422FD3DC600769564 /* glbalignsimple.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = glbalignsimple.cpp; sourceTree = "<group>"; };
+		BDFD53C522FD3DC600769564 /* refinetreee.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = refinetreee.cpp; sourceTree = "<group>"; };
+		BDFD53C622FD3DC600769564 /* pam200mafft.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pam200mafft.cpp; sourceTree = "<group>"; };
+		BDFD53C722FD3DC600769564 /* clust.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clust.h; sourceTree = "<group>"; };
+		BDFD53C822FD3DC600769564 /* nwsmall.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = nwsmall.cpp; sourceTree = "<group>"; };
+		BDFD53C922FD3DC600769564 /* traceback.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = traceback.cpp; sourceTree = "<group>"; };
+		BDFD53CA22FD3DC600769564 /* difftreese.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = difftreese.cpp; sourceTree = "<group>"; };
+		BDFD53CB22FD3DC600769564 /* profile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = profile.cpp; sourceTree = "<group>"; };
+		BDFD53CC22FD3DC600769564 /* aligntwomsas.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = aligntwomsas.cpp; sourceTree = "<group>"; };
+		BDFD53CD22FD3DC700769564 /* nucmx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = nucmx.cpp; sourceTree = "<group>"; };
+		BDFD53CE22FD3DC700769564 /* alpha.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = alpha.cpp; sourceTree = "<group>"; };
+		BDFD53CF22FD3DC700769564 /* henikoffweightpb.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = henikoffweightpb.cpp; sourceTree = "<group>"; };
+		BDFD53D022FD3DC700769564 /* scoregaps.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scoregaps.cpp; sourceTree = "<group>"; };
+		BDFD53D122FD3DC700769564 /* gonnet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gonnet.cpp; sourceTree = "<group>"; };
+		BDFD53D222FD3DC700769564 /* muscle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = muscle.h; sourceTree = "<group>"; };
+		BDFD53D322FD3DC700769564 /* savebest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = savebest.cpp; sourceTree = "<group>"; };
+		BDFD53D422FD3DC700769564 /* clwwt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = clwwt.cpp; sourceTree = "<group>"; };
+		BDFD53D522FD3DC700769564 /* nwdasimple2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = nwdasimple2.cpp; sourceTree = "<group>"; };
+		BDFD53D622FD3DC700769564 /* clustsetmsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clustsetmsa.h; sourceTree = "<group>"; };
+		BDFD53D722FD3DC700769564 /* diaglist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = diaglist.h; sourceTree = "<group>"; };
+		BDFD53D822FD3DC700769564 /* treefrommsa.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = treefrommsa.cpp; sourceTree = "<group>"; };
+		BDFD53D922FD3DC700769564 /* makerootmsab.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = makerootmsab.cpp; sourceTree = "<group>"; };
+		BDFD53DA22FD3DC800769564 /* sw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sw.cpp; sourceTree = "<group>"; };
+		BDFD53DB22FD3DC800769564 /* intmath.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = intmath.cpp; sourceTree = "<group>"; };
+		BDFD53DC22FD3DC800769564 /* fasta.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fasta.cpp; sourceTree = "<group>"; };
+		BDFD53DD22FD3DC800769564 /* fastscorepath2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fastscorepath2.cpp; sourceTree = "<group>"; };
+		BDFD53DE22FD3DC800769564 /* phytofile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = phytofile.cpp; sourceTree = "<group>"; };
+		BDFD53DF22FD3DC800769564 /* globalslinux.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = globalslinux.cpp; sourceTree = "<group>"; };
+		BDFD53E022FD3DC800769564 /* realigndiffse.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = realigndiffse.cpp; sourceTree = "<group>"; };
+		BDFD53E122FD3DC800769564 /* refinehoriz.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = refinehoriz.cpp; sourceTree = "<group>"; };
+		BDFD53E222FD3DC800769564 /* edgelist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = edgelist.h; sourceTree = "<group>"; };
+		BDFD53E322FD3DC800769564 /* progalign.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = progalign.cpp; sourceTree = "<group>"; };
+		BDFD53E422FD3DC800769564 /* henikoffweight.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = henikoffweight.cpp; sourceTree = "<group>"; };
+		BDFD53E522FD3DC800769564 /* dpreglist.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dpreglist.cpp; sourceTree = "<group>"; };
+		BDFD53E622FD3DC800769564 /* msa.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = msa.cpp; sourceTree = "<group>"; };
+		BDFD53E722FD3DC800769564 /* glbaligndiag.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = glbaligndiag.cpp; sourceTree = "<group>"; };
+		BDFD53E822FD3DC800769564 /* msa2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = msa2.cpp; sourceTree = "<group>"; };
+		BDFD53E922FD3DC900769564 /* phy4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = phy4.cpp; sourceTree = "<group>"; };
+		BDFD53EA22FD3DC900769564 /* spfast.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = spfast.cpp; sourceTree = "<group>"; };
+		BDFD53EB22FD3DC900769564 /* threewaywt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = threewaywt.cpp; sourceTree = "<group>"; };
+		BDFD53EC22FD3DC900769564 /* enums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = enums.h; sourceTree = "<group>"; };
+		BDFD53ED22FD3DC900769564 /* fastdistkmer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fastdistkmer.cpp; sourceTree = "<group>"; };
+		BDFD53EE22FD3DC900769564 /* options.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = options.cpp; sourceTree = "<group>"; };
+		BDFD53EF22FD3DC900769564 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		BDFD53F022FD3DC900769564 /* realigndiffs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = realigndiffs.cpp; sourceTree = "<group>"; };
+		BDFD53F122FD3DC900769564 /* scorehistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scorehistory.h; sourceTree = "<group>"; };
+		BDFD53F222FD3DC900769564 /* scorepp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scorepp.cpp; sourceTree = "<group>"; };
+		BDFD53F322FD3DC900769564 /* drawtree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = drawtree.cpp; sourceTree = "<group>"; };
+		BDFD53F422FD3DC900769564 /* tomhydro.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tomhydro.cpp; sourceTree = "<group>"; };
+		BDFD53F522FD3DC900769564 /* msadist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = msadist.h; sourceTree = "<group>"; };
+		BDFD53F622FD3DC900769564 /* tree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tree.h; sourceTree = "<group>"; };
+		BDFD53F722FD3DCA00769564 /* refinetree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = refinetree.cpp; sourceTree = "<group>"; };
+		BDFD53F822FD3DCA00769564 /* glbalignle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = glbalignle.cpp; sourceTree = "<group>"; };
+		BDFD53F922FD3DCA00769564 /* unixio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unixio.h; sourceTree = "<group>"; };
+		BDFD53FA22FD3DCA00769564 /* upgma2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = upgma2.cpp; sourceTree = "<group>"; };
+		BDFD53FB22FD3DCA00769564 /* usage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = usage.cpp; sourceTree = "<group>"; };
+		BDFD53FC22FD3DCA00769564 /* distpwkimura.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = distpwkimura.cpp; sourceTree = "<group>"; };
+		BDFD53FD22FD3DCA00769564 /* estring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = estring.h; sourceTree = "<group>"; };
+		BDFD53FE22FD3DCA00769564 /* validateids.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = validateids.cpp; sourceTree = "<group>"; };
+		BDFD53FF22FD3DCA00769564 /* fastdistmafft.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fastdistmafft.cpp; sourceTree = "<group>"; };
+		BDFD540022FD3DCA00769564 /* mpam200.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mpam200.cpp; sourceTree = "<group>"; };
+		BDFD540122FD3DCA00769564 /* muscle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = muscle.cpp; sourceTree = "<group>"; };
+		BDFD540222FD3DCA00769564 /* vtml2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vtml2.cpp; sourceTree = "<group>"; };
+		BDFD540322FD3DCA00769564 /* enumopts.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = enumopts.cpp; sourceTree = "<group>"; };
+		BDFD540422FD3DCA00769564 /* fastdistjones.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fastdistjones.cpp; sourceTree = "<group>"; };
+		BDFD540522FD3DCB00769564 /* profile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = profile.h; sourceTree = "<group>"; };
+		BDFD540622FD3DCB00769564 /* refinesubfams.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = refinesubfams.cpp; sourceTree = "<group>"; };
+		BDFD540722FD3DCB00769564 /* msadistmafft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = msadistmafft.h; sourceTree = "<group>"; };
+		BDFD540822FD3DCB00769564 /* seqvect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = seqvect.h; sourceTree = "<group>"; };
+		BDFD540922FD3DCB00769564 /* blosum62.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = blosum62.cpp; sourceTree = "<group>"; };
+		BDFD540A22FD3DCB00769564 /* estring.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = estring.cpp; sourceTree = "<group>"; };
+		BDFD540B22FD3DCB00769564 /* textfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = textfile.h; sourceTree = "<group>"; };
+		BDFD540C22FD3DCB00769564 /* fastdistnuc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fastdistnuc.cpp; sourceTree = "<group>"; };
+		BDFD540D22FD3DCB00769564 /* globalswin32.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = globalswin32.cpp; sourceTree = "<group>"; };
+		BDFD540E22FD3DCB00769564 /* nwdasimple.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = nwdasimple.cpp; sourceTree = "<group>"; };
+		BDFD540F22FD3DCB00769564 /* anchors.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = anchors.cpp; sourceTree = "<group>"; };
+		BDFD541022FD3DCB00769564 /* aligngivenpath.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = aligngivenpath.cpp; sourceTree = "<group>"; };
+		BDFD541122FD3DCB00769564 /* physeq.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = physeq.cpp; sourceTree = "<group>"; };
+		BDFD541222FD3DCB00769564 /* pwpath.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pwpath.cpp; sourceTree = "<group>"; };
+		BDFD541322FD3DCC00769564 /* difftrees.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = difftrees.cpp; sourceTree = "<group>"; };
+		BDFD541422FD3DCC00769564 /* phyfromclust.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = phyfromclust.cpp; sourceTree = "<group>"; };
+		BDFD541522FD3DCC00769564 /* glbalndimer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = glbalndimer.cpp; sourceTree = "<group>"; };
+		BDFD541622FD3DCC00769564 /* dpregionlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dpregionlist.h; sourceTree = "<group>"; };
+		BDFD541722FD3DCC00769564 /* objscoreda.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = objscoreda.cpp; sourceTree = "<group>"; };
+		BDFD541822FD3DCC00769564 /* globalsother.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = globalsother.cpp; sourceTree = "<group>"; };
+		BDFD541922FD3DCC00769564 /* distfunc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = distfunc.cpp; sourceTree = "<group>"; };
+		BDFD541A22FD3DCC00769564 /* onexception.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = onexception.cpp; sourceTree = "<group>"; };
+		BDFD541B22FD3DCC00769564 /* diffobjscore.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = diffobjscore.cpp; sourceTree = "<group>"; };
+		BDFD541C22FD3DCC00769564 /* refine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = refine.cpp; sourceTree = "<group>"; };
+		BDFD541D22FD3DCC00769564 /* gonnet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gonnet.h; sourceTree = "<group>"; };
+		BDFD541E22FD3DCC00769564 /* refinew.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = refinew.cpp; sourceTree = "<group>"; };
+		BDFD541F22FD3DCC00769564 /* color.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = color.cpp; sourceTree = "<group>"; };
+		BDFD542022FD3DCC00769564 /* objscore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objscore.h; sourceTree = "<group>"; };
+		BDFD542122FD3DCD00769564 /* distcalc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = distcalc.h; sourceTree = "<group>"; };
+		BDFD542222FD3DCD00769564 /* subfam.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = subfam.cpp; sourceTree = "<group>"; };
+		BDFD542322FD3DCD00769564 /* globals.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = globals.cpp; sourceTree = "<group>"; };
+		BDFD542422FD3DCD00769564 /* setgscweights.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = setgscweights.cpp; sourceTree = "<group>"; };
+		BDFD542522FD3DCD00769564 /* fastdist.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fastdist.cpp; sourceTree = "<group>"; };
+		BDFD542622FD3DCD00769564 /* hydro.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = hydro.cpp; sourceTree = "<group>"; };
+		BDFD542722FD3DCD00769564 /* textfile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = textfile.cpp; sourceTree = "<group>"; };
+		BDFD542822FD3DCD00769564 /* msf.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = msf.cpp; sourceTree = "<group>"; };
+		BDFD542922FD3DCD00769564 /* finddiagsn.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = finddiagsn.cpp; sourceTree = "<group>"; };
+		BDFD542A22FD3DCD00769564 /* fasta2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fasta2.cpp; sourceTree = "<group>"; };
+		BDFD542B22FD3DCD00769564 /* fastclust.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fastclust.cpp; sourceTree = "<group>"; };
+		BDFD542C22FD3DCD00769564 /* ppscore.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ppscore.cpp; sourceTree = "<group>"; };
+		BDFD542D22FD3DCD00769564 /* enumtostr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = enumtostr.cpp; sourceTree = "<group>"; };
+		BDFD542E22FD3DCD00769564 /* alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = alpha.h; sourceTree = "<group>"; };
+		BDFD542F22FD3DCE00769564 /* local.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = local.cpp; sourceTree = "<group>"; };
+		BDFD543022FD3DCE00769564 /* globalsosx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = globalsosx.cpp; sourceTree = "<group>"; };
+		BDFD543122FD3DCE00769564 /* refinevert.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = refinevert.cpp; sourceTree = "<group>"; };
+		BDFD543222FD3DCE00769564 /* termgaps.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = termgaps.cpp; sourceTree = "<group>"; };
+		BDFD543322FD3DCE00769564 /* blosumla.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = blosumla.cpp; sourceTree = "<group>"; };
+		BDFD543422FD3DCE00769564 /* phyfromfile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = phyfromfile.cpp; sourceTree = "<group>"; };
+		BDFD543522FD3DCE00769564 /* profdb.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = profdb.cpp; sourceTree = "<group>"; };
+		BDFD543622FD3DCE00769564 /* progress.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = progress.cpp; sourceTree = "<group>"; };
+		BDFD543722FD3DCE00769564 /* tracebackopt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tracebackopt.cpp; sourceTree = "<group>"; };
+		BDFD543822FD3DCE00769564 /* diffpaths.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = diffpaths.cpp; sourceTree = "<group>"; };
+		BDFD543922FD3DCE00769564 /* glbalignsp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = glbalignsp.cpp; sourceTree = "<group>"; };
+		BDFD543A22FD3DCE00769564 /* objscore.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = objscore.cpp; sourceTree = "<group>"; };
+		BDFD543B22FD3DCE00769564 /* writescorefile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = writescorefile.cpp; sourceTree = "<group>"; };
+		BDFD543C22FD3DCF00769564 /* scoredist.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scoredist.cpp; sourceTree = "<group>"; };
+		BDFD543D22FD3DCF00769564 /* outweights.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = outweights.cpp; sourceTree = "<group>"; };
+		BDFD543E22FD3DCF00769564 /* aln.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = aln.cpp; sourceTree = "<group>"; };
+		BDFD543F22FD3DCF00769564 /* pwpath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pwpath.h; sourceTree = "<group>"; };
+		BDFD544022FD3DCF00769564 /* scorehistory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scorehistory.cpp; sourceTree = "<group>"; };
+		BDFD544122FD3DCF00769564 /* msadistkimura.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = msadistkimura.cpp; sourceTree = "<group>"; };
+		BDFD544222FD3DCF00769564 /* aligntwoprofs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = aligntwoprofs.cpp; sourceTree = "<group>"; };
+		BDFD544322FD3DCF00769564 /* seq.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = seq.cpp; sourceTree = "<group>"; };
+		BDFD544422FD3DCF00769564 /* html.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = html.cpp; sourceTree = "<group>"; };
+		BDFD544522FD3DCF00769564 /* readmx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = readmx.cpp; sourceTree = "<group>"; };
+		BDFD544622FD3DCF00769564 /* glbalign352.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = glbalign352.cpp; sourceTree = "<group>"; };
+		BDFD544722FD3DCF00769564 /* glbalignss.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = glbalignss.cpp; sourceTree = "<group>"; };
+		BDFD544822FD3DCF00769564 /* msa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = msa.h; sourceTree = "<group>"; };
+		BDFD544922FD3DD000769564 /* intmath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = intmath.h; sourceTree = "<group>"; };
+		BDFD544A22FD3DD000769564 /* nwrec.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = nwrec.cpp; sourceTree = "<group>"; };
+		BDFD544B22FD3DD000769564 /* params.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = params.cpp; sourceTree = "<group>"; };
+		BDFD544C22FD3DD000769564 /* timing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timing.h; sourceTree = "<group>"; };
+		BDFD544D22FD3DD000769564 /* cluster.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cluster.cpp; sourceTree = "<group>"; };
+		BDFD544E22FD3DD000769564 /* finddiags.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = finddiags.cpp; sourceTree = "<group>"; };
+		BDFD544F22FD3DD000769564 /* sptest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sptest.cpp; sourceTree = "<group>"; };
+		BDFD545022FD3DD000769564 /* muscle.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = muscle.dSYM; sourceTree = "<group>"; };
+		BDFD545122FD3DD000769564 /* gapscoredimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gapscoredimer.h; sourceTree = "<group>"; };
+		BDFD545222FD3DD000769564 /* progressivealign.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = progressivealign.cpp; sourceTree = "<group>"; };
+		BDFD545322FD3DD000769564 /* enumopts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = enumopts.h; sourceTree = "<group>"; };
+		BDFD545422FD3DD000769564 /* makerootmsa.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = makerootmsa.cpp; sourceTree = "<group>"; };
+		BDFD545522FD3DD000769564 /* edgelist.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = edgelist.cpp; sourceTree = "<group>"; };
+		BDFD545622FD3DD000769564 /* dpreglist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dpreglist.h; sourceTree = "<group>"; };
+		BDFD545722FD3DD100769564 /* nwdasmall.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = nwdasmall.cpp; sourceTree = "<group>"; };
+		BDFD545822FD3DD100769564 /* phy3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = phy3.cpp; sourceTree = "<group>"; };
+		BDFD545922FD3DD100769564 /* maketree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = maketree.cpp; sourceTree = "<group>"; };
+		BDFD54ED22FD3F3600769564 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BDFD512422FD3CC700769564 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BDFD511E22FD3CC700769564 = {
+			isa = PBXGroup;
+			children = (
+				BDFD54ED22FD3F3600769564 /* main.cpp */,
+				BDFD541022FD3DCB00769564 /* aligngivenpath.cpp */,
+				BDFD53A422FD3DC400769564 /* aligngivenpathsw.cpp */,
+				BDFD53CC22FD3DC600769564 /* aligntwomsas.cpp */,
+				BDFD544222FD3DCF00769564 /* aligntwoprofs.cpp */,
+				BDFD543E22FD3DCF00769564 /* aln.cpp */,
+				BDFD53CE22FD3DC700769564 /* alpha.cpp */,
+				BDFD542E22FD3DCD00769564 /* alpha.h */,
+				BDFD540F22FD3DCB00769564 /* anchors.cpp */,
+				BDFD53B522FD3DC500769564 /* bittraceback.cpp */,
+				BDFD540922FD3DCB00769564 /* blosum62.cpp */,
+				BDFD543322FD3DCE00769564 /* blosumla.cpp */,
+				BDFD53A722FD3DC400769564 /* clust.cpp */,
+				BDFD53C722FD3DC600769564 /* clust.h */,
+				BDFD544D22FD3DD000769564 /* cluster.cpp */,
+				BDFD53AE22FD3DC500769564 /* cluster.h */,
+				BDFD53B122FD3DC500769564 /* clustset.h */,
+				BDFD53AD22FD3DC500769564 /* clustsetdf.h */,
+				BDFD53D622FD3DC700769564 /* clustsetmsa.h */,
+				BDFD53D422FD3DC700769564 /* clwwt.cpp */,
+				BDFD541F22FD3DCC00769564 /* color.cpp */,
+				BDFD53A222FD3DC400769564 /* cons.cpp */,
+				BDFD53A822FD3DC400769564 /* diaglist.cpp */,
+				BDFD53D722FD3DC700769564 /* diaglist.h */,
+				BDFD541B22FD3DCC00769564 /* diffobjscore.cpp */,
+				BDFD543822FD3DCE00769564 /* diffpaths.cpp */,
+				BDFD541322FD3DCC00769564 /* difftrees.cpp */,
+				BDFD53CA22FD3DC600769564 /* difftreese.cpp */,
+				BDFD53BB22FD3DC500769564 /* distcalc.cpp */,
+				BDFD542122FD3DCD00769564 /* distcalc.h */,
+				BDFD541922FD3DCC00769564 /* distfunc.cpp */,
+				BDFD53B422FD3DC500769564 /* distfunc.h */,
+				BDFD53FC22FD3DCA00769564 /* distpwkimura.cpp */,
+				BDFD53AA22FD3DC400769564 /* domuscle.cpp */,
+				BDFD53BA22FD3DC500769564 /* dosp.cpp */,
+				BDFD541622FD3DCC00769564 /* dpregionlist.h */,
+				BDFD53E522FD3DC800769564 /* dpreglist.cpp */,
+				BDFD545622FD3DD000769564 /* dpreglist.h */,
+				BDFD53F322FD3DC900769564 /* drawtree.cpp */,
+				BDFD545522FD3DD000769564 /* edgelist.cpp */,
+				BDFD53E222FD3DC800769564 /* edgelist.h */,
+				BDFD540322FD3DCA00769564 /* enumopts.cpp */,
+				BDFD545322FD3DD000769564 /* enumopts.h */,
+				BDFD53EC22FD3DC900769564 /* enums.h */,
+				BDFD542D22FD3DCD00769564 /* enumtostr.cpp */,
+				BDFD540A22FD3DCB00769564 /* estring.cpp */,
+				BDFD53FD22FD3DCA00769564 /* estring.h */,
+				BDFD53DC22FD3DC800769564 /* fasta.cpp */,
+				BDFD542A22FD3DCD00769564 /* fasta2.cpp */,
+				BDFD542B22FD3DCD00769564 /* fastclust.cpp */,
+				BDFD542522FD3DCD00769564 /* fastdist.cpp */,
+				BDFD540422FD3DCA00769564 /* fastdistjones.cpp */,
+				BDFD53BC22FD3DC500769564 /* fastdistkbit.cpp */,
+				BDFD53ED22FD3DC900769564 /* fastdistkmer.cpp */,
+				BDFD53FF22FD3DCA00769564 /* fastdistmafft.cpp */,
+				BDFD540C22FD3DCB00769564 /* fastdistnuc.cpp */,
+				BDFD53DD22FD3DC800769564 /* fastscorepath2.cpp */,
+				BDFD544E22FD3DD000769564 /* finddiags.cpp */,
+				BDFD542922FD3DCD00769564 /* finddiagsn.cpp */,
+				BDFD545122FD3DD000769564 /* gapscoredimer.h */,
+				BDFD53B622FD3DC500769564 /* glbalign.cpp */,
+				BDFD544622FD3DCF00769564 /* glbalign352.cpp */,
+				BDFD53E722FD3DC800769564 /* glbaligndiag.cpp */,
+				BDFD53F822FD3DCA00769564 /* glbalignle.cpp */,
+				BDFD53C422FD3DC600769564 /* glbalignsimple.cpp */,
+				BDFD543922FD3DCE00769564 /* glbalignsp.cpp */,
+				BDFD53BD22FD3DC500769564 /* glbalignspn.cpp */,
+				BDFD544722FD3DCF00769564 /* glbalignss.cpp */,
+				BDFD541522FD3DCC00769564 /* glbalndimer.cpp */,
+				BDFD542322FD3DCD00769564 /* globals.cpp */,
+				BDFD53DF22FD3DC800769564 /* globalslinux.cpp */,
+				BDFD543022FD3DCE00769564 /* globalsosx.cpp */,
+				BDFD541822FD3DCC00769564 /* globalsother.cpp */,
+				BDFD540D22FD3DCB00769564 /* globalswin32.cpp */,
+				BDFD53D122FD3DC700769564 /* gonnet.cpp */,
+				BDFD541D22FD3DCC00769564 /* gonnet.h */,
+				BDFD53E422FD3DC800769564 /* henikoffweight.cpp */,
+				BDFD53CF22FD3DC700769564 /* henikoffweightpb.cpp */,
+				BDFD544422FD3DCF00769564 /* html.cpp */,
+				BDFD542622FD3DCD00769564 /* hydro.cpp */,
+				BDFD53DB22FD3DC800769564 /* intmath.cpp */,
+				BDFD544922FD3DD000769564 /* intmath.h */,
+				BDFD542F22FD3DCE00769564 /* local.cpp */,
+				BDFD53EF22FD3DC900769564 /* Makefile */,
+				BDFD545422FD3DD000769564 /* makerootmsa.cpp */,
+				BDFD53D922FD3DC700769564 /* makerootmsab.cpp */,
+				BDFD545922FD3DD100769564 /* maketree.cpp */,
+				BDFD53A322FD3DC400769564 /* mhack.cpp */,
+				BDFD540022FD3DCA00769564 /* mpam200.cpp */,
+				BDFD53E622FD3DC800769564 /* msa.cpp */,
+				BDFD544822FD3DCF00769564 /* msa.h */,
+				BDFD53E822FD3DC800769564 /* msa2.cpp */,
+				BDFD53F522FD3DC900769564 /* msadist.h */,
+				BDFD544122FD3DCF00769564 /* msadistkimura.cpp */,
+				BDFD53C222FD3DC600769564 /* msadistkimura.h */,
+				BDFD540722FD3DCB00769564 /* msadistmafft.h */,
+				BDFD542822FD3DCD00769564 /* msf.cpp */,
+				BDFD540122FD3DCA00769564 /* muscle.cpp */,
+				BDFD545022FD3DD000769564 /* muscle.dSYM */,
+				BDFD53D222FD3DC700769564 /* muscle.h */,
+				BDFD53A522FD3DC400769564 /* muscleout.cpp */,
+				BDFD53CD22FD3DC700769564 /* nucmx.cpp */,
+				BDFD540E22FD3DCB00769564 /* nwdasimple.cpp */,
+				BDFD53D522FD3DC700769564 /* nwdasimple2.cpp */,
+				BDFD545722FD3DD100769564 /* nwdasmall.cpp */,
+				BDFD544A22FD3DD000769564 /* nwrec.cpp */,
+				BDFD53C822FD3DC600769564 /* nwsmall.cpp */,
+				BDFD543A22FD3DCE00769564 /* objscore.cpp */,
+				BDFD542022FD3DCC00769564 /* objscore.h */,
+				BDFD53B722FD3DC500769564 /* objscore2.cpp */,
+				BDFD541722FD3DCC00769564 /* objscoreda.cpp */,
+				BDFD541A22FD3DCC00769564 /* onexception.cpp */,
+				BDFD53EE22FD3DC900769564 /* options.cpp */,
+				BDFD543D22FD3DCF00769564 /* outweights.cpp */,
+				BDFD53C622FD3DC600769564 /* pam200mafft.cpp */,
+				BDFD544B22FD3DD000769564 /* params.cpp */,
+				BDFD53B822FD3DC500769564 /* params.h */,
+				BDFD53A922FD3DC400769564 /* phy.cpp */,
+				BDFD53C122FD3DC600769564 /* phy2.cpp */,
+				BDFD545822FD3DD100769564 /* phy3.cpp */,
+				BDFD53E922FD3DC900769564 /* phy4.cpp */,
+				BDFD541422FD3DCC00769564 /* phyfromclust.cpp */,
+				BDFD543422FD3DCE00769564 /* phyfromfile.cpp */,
+				BDFD541122FD3DCB00769564 /* physeq.cpp */,
+				BDFD53DE22FD3DC800769564 /* phytofile.cpp */,
+				BDFD53B222FD3DC500769564 /* posgap.cpp */,
+				BDFD542C22FD3DCD00769564 /* ppscore.cpp */,
+				BDFD543522FD3DCE00769564 /* profdb.cpp */,
+				BDFD53CB22FD3DC600769564 /* profile.cpp */,
+				BDFD540522FD3DCB00769564 /* profile.h */,
+				BDFD53AB22FD3DC500769564 /* profilefrommsa.cpp */,
+				BDFD53E322FD3DC800769564 /* progalign.cpp */,
+				BDFD543622FD3DCE00769564 /* progress.cpp */,
+				BDFD545222FD3DD000769564 /* progressivealign.cpp */,
+				BDFD541222FD3DCB00769564 /* pwpath.cpp */,
+				BDFD543F22FD3DCF00769564 /* pwpath.h */,
+				BDFD544522FD3DCF00769564 /* readmx.cpp */,
+				BDFD53F022FD3DC900769564 /* realigndiffs.cpp */,
+				BDFD53E022FD3DC800769564 /* realigndiffse.cpp */,
+				BDFD541C22FD3DCC00769564 /* refine.cpp */,
+				BDFD53E122FD3DC800769564 /* refinehoriz.cpp */,
+				BDFD540622FD3DCB00769564 /* refinesubfams.cpp */,
+				BDFD53F722FD3DCA00769564 /* refinetree.cpp */,
+				BDFD53C522FD3DC600769564 /* refinetreee.cpp */,
+				BDFD543122FD3DCE00769564 /* refinevert.cpp */,
+				BDFD541E22FD3DCC00769564 /* refinew.cpp */,
+				BDFD53D322FD3DC700769564 /* savebest.cpp */,
+				BDFD543C22FD3DCF00769564 /* scoredist.cpp */,
+				BDFD53D022FD3DC700769564 /* scoregaps.cpp */,
+				BDFD544022FD3DCF00769564 /* scorehistory.cpp */,
+				BDFD53F122FD3DC900769564 /* scorehistory.h */,
+				BDFD53F222FD3DC900769564 /* scorepp.cpp */,
+				BDFD544322FD3DCF00769564 /* seq.cpp */,
+				BDFD53B922FD3DC500769564 /* seq.h */,
+				BDFD53A622FD3DC400769564 /* seqvect.cpp */,
+				BDFD540822FD3DCB00769564 /* seqvect.h */,
+				BDFD53C022FD3DC600769564 /* setblosumweights.cpp */,
+				BDFD542422FD3DCD00769564 /* setgscweights.cpp */,
+				BDFD53C322FD3DC600769564 /* setnewhandler.cpp */,
+				BDFD53EA22FD3DC900769564 /* spfast.cpp */,
+				BDFD544F22FD3DD000769564 /* sptest.cpp */,
+				BDFD53BF22FD3DC600769564 /* stabilize.cpp */,
+				BDFD542222FD3DCD00769564 /* subfam.cpp */,
+				BDFD53BE22FD3DC500769564 /* subfams.cpp */,
+				BDFD53B322FD3DC500769564 /* svnversion.h */,
+				BDFD53DA22FD3DC800769564 /* sw.cpp */,
+				BDFD543222FD3DCE00769564 /* termgaps.cpp */,
+				BDFD542722FD3DCD00769564 /* textfile.cpp */,
+				BDFD540B22FD3DCB00769564 /* textfile.h */,
+				BDFD53EB22FD3DC900769564 /* threewaywt.cpp */,
+				BDFD544C22FD3DD000769564 /* timing.h */,
+				BDFD53F422FD3DC900769564 /* tomhydro.cpp */,
+				BDFD53C922FD3DC600769564 /* traceback.cpp */,
+				BDFD543722FD3DCE00769564 /* tracebackopt.cpp */,
+				BDFD53AC22FD3DC500769564 /* tracebacksw.cpp */,
+				BDFD53F622FD3DC900769564 /* tree.h */,
+				BDFD53D822FD3DC700769564 /* treefrommsa.cpp */,
+				BDFD53B022FD3DC500769564 /* types.h */,
+				BDFD53AF22FD3DC500769564 /* typetostr.cpp */,
+				BDFD53F922FD3DCA00769564 /* unixio.h */,
+				BDFD53FA22FD3DCA00769564 /* upgma2.cpp */,
+				BDFD53FB22FD3DCA00769564 /* usage.cpp */,
+				BDFD53FE22FD3DCA00769564 /* validateids.cpp */,
+				BDFD540222FD3DCA00769564 /* vtml2.cpp */,
+				BDFD543B22FD3DCE00769564 /* writescorefile.cpp */,
+				BDFD512822FD3CC700769564 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BDFD512822FD3CC700769564 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BDFD512722FD3CC700769564 /* muscle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BDFD512622FD3CC700769564 /* muscle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDFD512E22FD3CC700769564 /* Build configuration list for PBXNativeTarget "muscle" */;
+			buildPhases = (
+				BDFD512322FD3CC700769564 /* Sources */,
+				BDFD512422FD3CC700769564 /* Frameworks */,
+				BDFD512522FD3CC700769564 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = muscle;
+			productName = muscle;
+			productReference = BDFD512722FD3CC700769564 /* muscle */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BDFD511F22FD3CC700769564 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Nayeem;
+				TargetAttributes = {
+					BDFD512622FD3CC700769564 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = BDFD512222FD3CC700769564 /* Build configuration list for PBXProject "muscle" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BDFD511E22FD3CC700769564;
+			productRefGroup = BDFD512822FD3CC700769564 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BDFD512622FD3CC700769564 /* muscle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BDFD512322FD3CC700769564 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDFD547822FD3DD100769564 /* difftreese.cpp in Sources */,
+				BDFD54B722FD3DD100769564 /* globalsother.cpp in Sources */,
+				BDFD54B522FD3DD100769564 /* glbalndimer.cpp in Sources */,
+				BDFD54AE22FD3DD100769564 /* nwdasimple.cpp in Sources */,
+				BDFD54CD22FD3DD100769564 /* termgaps.cpp in Sources */,
+				BDFD547C22FD3DD100769564 /* alpha.cpp in Sources */,
+				BDFD549722FD3DD100769564 /* options.cpp in Sources */,
+				BDFD548922FD3DD100769564 /* phytofile.cpp in Sources */,
+				BDFD546022FD3DD100769564 /* diaglist.cpp in Sources */,
+				BDFD54BC22FD3DD100769564 /* refinew.cpp in Sources */,
+				BDFD54DA22FD3DD100769564 /* scorehistory.cpp in Sources */,
+				BDFD54DC22FD3DD100769564 /* aligntwoprofs.cpp in Sources */,
+				BDFD54CE22FD3DD100769564 /* blosumla.cpp in Sources */,
+				BDFD546122FD3DD100769564 /* phy.cpp in Sources */,
+				BDFD548D22FD3DD100769564 /* progalign.cpp in Sources */,
+				BDFD54D422FD3DD100769564 /* glbalignsp.cpp in Sources */,
+				BDFD545E22FD3DD100769564 /* seqvect.cpp in Sources */,
+				BDFD54C322FD3DD100769564 /* textfile.cpp in Sources */,
+				BDFD54A822FD3DD100769564 /* fastdistjones.cpp in Sources */,
+				BDFD546322FD3DD100769564 /* profilefrommsa.cpp in Sources */,
+				BDFD54A422FD3DD100769564 /* mpam200.cpp in Sources */,
+				BDFD546B22FD3DD100769564 /* distcalc.cpp in Sources */,
+				BDFD54B822FD3DD100769564 /* distfunc.cpp in Sources */,
+				BDFD54C822FD3DD100769564 /* ppscore.cpp in Sources */,
+				BDFD548222FD3DD100769564 /* nwdasimple2.cpp in Sources */,
+				BDFD54B322FD3DD100769564 /* difftrees.cpp in Sources */,
+				BDFD54B422FD3DD100769564 /* phyfromclust.cpp in Sources */,
+				BDFD54E622FD3DD100769564 /* sptest.cpp in Sources */,
+				BDFD548F22FD3DD100769564 /* dpreglist.cpp in Sources */,
+				BDFD54B222FD3DD100769564 /* pwpath.cpp in Sources */,
+				BDFD54E122FD3DD100769564 /* glbalignss.cpp in Sources */,
+				BDFD54D122FD3DD100769564 /* progress.cpp in Sources */,
+				BDFD547622FD3DD100769564 /* nwsmall.cpp in Sources */,
+				BDFD548622FD3DD100769564 /* intmath.cpp in Sources */,
+				BDFD54D822FD3DD100769564 /* outweights.cpp in Sources */,
+				BDFD549C22FD3DD100769564 /* tomhydro.cpp in Sources */,
+				BDFD54E322FD3DD100769564 /* params.cpp in Sources */,
+				BDFD54EA22FD3DD100769564 /* nwdasmall.cpp in Sources */,
+				BDFD546D22FD3DD100769564 /* glbalignspn.cpp in Sources */,
+				BDFD54EC22FD3DD100769564 /* maketree.cpp in Sources */,
+				BDFD546522FD3DD100769564 /* typetostr.cpp in Sources */,
+				BDFD545B22FD3DD100769564 /* mhack.cpp in Sources */,
+				BDFD549B22FD3DD100769564 /* drawtree.cpp in Sources */,
+				BDFD54C922FD3DD100769564 /* enumtostr.cpp in Sources */,
+				BDFD54EB22FD3DD100769564 /* phy3.cpp in Sources */,
+				BDFD548A22FD3DD100769564 /* globalslinux.cpp in Sources */,
+				BDFD54A222FD3DD100769564 /* validateids.cpp in Sources */,
+				BDFD548422FD3DD100769564 /* makerootmsab.cpp in Sources */,
+				BDFD548822FD3DD100769564 /* fastscorepath2.cpp in Sources */,
+				BDFD54D722FD3DD100769564 /* scoredist.cpp in Sources */,
+				BDFD54CC22FD3DD100769564 /* refinevert.cpp in Sources */,
+				BDFD54E522FD3DD100769564 /* finddiags.cpp in Sources */,
+				BDFD54DD22FD3DD100769564 /* seq.cpp in Sources */,
+				BDFD54AC22FD3DD100769564 /* fastdistnuc.cpp in Sources */,
+				BDFD54E022FD3DD100769564 /* glbalign352.cpp in Sources */,
+				BDFD548122FD3DD100769564 /* clwwt.cpp in Sources */,
+				BDFD546722FD3DD100769564 /* bittraceback.cpp in Sources */,
+				BDFD548B22FD3DD100769564 /* realigndiffse.cpp in Sources */,
+				BDFD54BE22FD3DD100769564 /* subfam.cpp in Sources */,
+				BDFD54A322FD3DD100769564 /* fastdistmafft.cpp in Sources */,
+				BDFD54C122FD3DD100769564 /* fastdist.cpp in Sources */,
+				BDFD547F22FD3DD100769564 /* gonnet.cpp in Sources */,
+				BDFD54D922FD3DD100769564 /* aln.cpp in Sources */,
+				BDFD546922FD3DD100769564 /* objscore2.cpp in Sources */,
+				BDFD547022FD3DD100769564 /* setblosumweights.cpp in Sources */,
+				BDFD54E922FD3DD100769564 /* edgelist.cpp in Sources */,
+				BDFD54CA22FD3DD100769564 /* local.cpp in Sources */,
+				BDFD54AF22FD3DD100769564 /* anchors.cpp in Sources */,
+				BDFD54C722FD3DD100769564 /* fastclust.cpp in Sources */,
+				BDFD54A022FD3DD100769564 /* usage.cpp in Sources */,
+				BDFD547922FD3DD100769564 /* profile.cpp in Sources */,
+				BDFD54BA22FD3DD100769564 /* diffobjscore.cpp in Sources */,
+				BDFD549F22FD3DD100769564 /* upgma2.cpp in Sources */,
+				BDFD54D222FD3DD100769564 /* tracebackopt.cpp in Sources */,
+				BDFD54EE22FD3F3600769564 /* main.cpp in Sources */,
+				BDFD546E22FD3DD100769564 /* subfams.cpp in Sources */,
+				BDFD548322FD3DD100769564 /* treefrommsa.cpp in Sources */,
+				BDFD546C22FD3DD100769564 /* fastdistkbit.cpp in Sources */,
+				BDFD54B622FD3DD100769564 /* objscoreda.cpp in Sources */,
+				BDFD547D22FD3DD100769564 /* henikoffweightpb.cpp in Sources */,
+				BDFD54E822FD3DD100769564 /* makerootmsa.cpp in Sources */,
+				BDFD54D522FD3DD100769564 /* objscore.cpp in Sources */,
+				BDFD545C22FD3DD100769564 /* aligngivenpathsw.cpp in Sources */,
+				BDFD549522FD3DD100769564 /* threewaywt.cpp in Sources */,
+				BDFD54C222FD3DD100769564 /* hydro.cpp in Sources */,
+				BDFD54E722FD3DD100769564 /* progressivealign.cpp in Sources */,
+				BDFD54A122FD3DD100769564 /* distpwkimura.cpp in Sources */,
+				BDFD54A622FD3DD100769564 /* vtml2.cpp in Sources */,
+				BDFD54D022FD3DD100769564 /* profdb.cpp in Sources */,
+				BDFD547B22FD3DD100769564 /* nucmx.cpp in Sources */,
+				BDFD549222FD3DD100769564 /* msa2.cpp in Sources */,
+				BDFD549022FD3DD100769564 /* msa.cpp in Sources */,
+				BDFD54AA22FD3DD100769564 /* blosum62.cpp in Sources */,
+				BDFD54E422FD3DD100769564 /* cluster.cpp in Sources */,
+				BDFD54BF22FD3DD100769564 /* globals.cpp in Sources */,
+				BDFD548522FD3DD100769564 /* sw.cpp in Sources */,
+				BDFD546422FD3DD100769564 /* tracebacksw.cpp in Sources */,
+				BDFD546622FD3DD100769564 /* posgap.cpp in Sources */,
+				BDFD546222FD3DD100769564 /* domuscle.cpp in Sources */,
+				BDFD54DB22FD3DD100769564 /* msadistkimura.cpp in Sources */,
+				BDFD547222FD3DD100769564 /* setnewhandler.cpp in Sources */,
+				BDFD547E22FD3DD100769564 /* scoregaps.cpp in Sources */,
+				BDFD549D22FD3DD100769564 /* refinetree.cpp in Sources */,
+				BDFD54CB22FD3DD100769564 /* globalsosx.cpp in Sources */,
+				BDFD545F22FD3DD100769564 /* clust.cpp in Sources */,
+				BDFD547722FD3DD100769564 /* traceback.cpp in Sources */,
+				BDFD547322FD3DD100769564 /* glbalignsimple.cpp in Sources */,
+				BDFD54E222FD3DD100769564 /* nwrec.cpp in Sources */,
+				BDFD54C522FD3DD100769564 /* finddiagsn.cpp in Sources */,
+				BDFD548C22FD3DD100769564 /* refinehoriz.cpp in Sources */,
+				BDFD54D322FD3DD100769564 /* diffpaths.cpp in Sources */,
+				BDFD54A722FD3DD100769564 /* enumopts.cpp in Sources */,
+				BDFD54B022FD3DD100769564 /* aligngivenpath.cpp in Sources */,
+				BDFD547A22FD3DD100769564 /* aligntwomsas.cpp in Sources */,
+				BDFD549922FD3DD100769564 /* realigndiffs.cpp in Sources */,
+				BDFD545A22FD3DD100769564 /* cons.cpp in Sources */,
+				BDFD545D22FD3DD100769564 /* muscleout.cpp in Sources */,
+				BDFD549122FD3DD100769564 /* glbaligndiag.cpp in Sources */,
+				BDFD54CF22FD3DD100769564 /* phyfromfile.cpp in Sources */,
+				BDFD547122FD3DD100769564 /* phy2.cpp in Sources */,
+				BDFD54B922FD3DD100769564 /* onexception.cpp in Sources */,
+				BDFD54B122FD3DD100769564 /* physeq.cpp in Sources */,
+				BDFD549622FD3DD100769564 /* fastdistkmer.cpp in Sources */,
+				BDFD547422FD3DD100769564 /* refinetreee.cpp in Sources */,
+				BDFD54C422FD3DD100769564 /* msf.cpp in Sources */,
+				BDFD549322FD3DD100769564 /* phy4.cpp in Sources */,
+				BDFD54D622FD3DD100769564 /* writescorefile.cpp in Sources */,
+				BDFD546F22FD3DD100769564 /* stabilize.cpp in Sources */,
+				BDFD54C622FD3DD100769564 /* fasta2.cpp in Sources */,
+				BDFD54C022FD3DD100769564 /* setgscweights.cpp in Sources */,
+				BDFD54BD22FD3DD100769564 /* color.cpp in Sources */,
+				BDFD54DF22FD3DD100769564 /* readmx.cpp in Sources */,
+				BDFD54BB22FD3DD100769564 /* refine.cpp in Sources */,
+				BDFD549A22FD3DD100769564 /* scorepp.cpp in Sources */,
+				BDFD546A22FD3DD100769564 /* dosp.cpp in Sources */,
+				BDFD54A522FD3DD100769564 /* muscle.cpp in Sources */,
+				BDFD549E22FD3DD100769564 /* glbalignle.cpp in Sources */,
+				BDFD548022FD3DD100769564 /* savebest.cpp in Sources */,
+				BDFD54AD22FD3DD100769564 /* globalswin32.cpp in Sources */,
+				BDFD548722FD3DD100769564 /* fasta.cpp in Sources */,
+				BDFD54AB22FD3DD100769564 /* estring.cpp in Sources */,
+				BDFD54DE22FD3DD100769564 /* html.cpp in Sources */,
+				BDFD547522FD3DD100769564 /* pam200mafft.cpp in Sources */,
+				BDFD54A922FD3DD100769564 /* refinesubfams.cpp in Sources */,
+				BDFD548E22FD3DD100769564 /* henikoffweight.cpp in Sources */,
+				BDFD546822FD3DD100769564 /* glbalign.cpp in Sources */,
+				BDFD549422FD3DD100769564 /* spfast.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BDFD512C22FD3CC700769564 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BDFD512D22FD3CC700769564 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BDFD512F22FD3CC700769564 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BDFD513022FD3CC700769564 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BDFD512222FD3CC700769564 /* Build configuration list for PBXProject "muscle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDFD512C22FD3CC700769564 /* Debug */,
+				BDFD512D22FD3CC700769564 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDFD512E22FD3CC700769564 /* Build configuration list for PBXNativeTarget "muscle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDFD512F22FD3CC700769564 /* Debug */,
+				BDFD513022FD3CC700769564 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BDFD511F22FD3CC700769564 /* Project object */;
+}

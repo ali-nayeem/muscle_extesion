@@ -2,6 +2,7 @@
 #include "msa.h"
 #include "profile.h"
 #include "objscore.h"
+#include "params.h"
 
 #define TRACE			0
 #define TRACE_SEQPAIR	0
@@ -13,6 +14,7 @@ extern SCOREMATRIX PAM200NoCenter;
 extern SCOREMATRIX VTML_SP;
 extern SCOREMATRIX VTML_SPNoCenter;
 extern SCOREMATRIX NUC_SP;
+extern float g_simgWeight;
 
 SCORE g_SPScoreLetters;
 SCORE g_SPScoreGaps;
@@ -230,6 +232,9 @@ SCORE ScoreSeqPairGaps(const MSA &msa1, unsigned uSeqIndex1,
 // of the alignment of each pair of sequences.
 SCORE ObjScoreSP(const MSA &msa, SCORE MatchScore[])
 	{
+    static int count = 0;
+    count++;
+    printf("Nayeem = %d, simg=%lf\n", count, g_simgWeight);
 #if	TRACE
 	Log("==================ObjScoreSP==============\n");
 	Log("msa=\n");

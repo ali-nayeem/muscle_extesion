@@ -10,7 +10,7 @@ SCORE g_scoreGapExtend = 0;
 SCORE g_scoreGapOpen2 = MINUS_INFINITY;
 SCORE g_scoreGapExtend2 = MINUS_INFINITY;
 SCORE g_scoreGapAmbig = 0;
-SCORE g_scoreAmbigFactor = 0;
+SCORE g_scoreAmbigFactor = 0; 
 
 extern SCOREMATRIX VTML_LA;
 extern SCOREMATRIX PAM200;
@@ -138,6 +138,7 @@ float g_dSmoothScoreCeil = fInsane;
 float g_dMinBestColScore = fInsane;
 float g_dMinSmoothScore = fInsane;
 SCORE g_scoreGapOpen = fInsane;
+float g_simgWeight = -1;
 //------------------------------------------------------
 
 static unsigned atou(const char *s)
@@ -598,6 +599,7 @@ void SetParams()
 
 	FloatParam("SUEFF", &g_dSUEFF);
 	FloatParam("HydroFactor", &g_dHydroFactor);
+        FloatParam("simg", &g_simgWeight);
 
 	EnumParam("ObjScore", OBJSCORE_Opts, (int *) &g_ObjScore);
 	EnumParam("TermGaps", TERMGAPS_Opts, (int *) &g_TermGaps);
