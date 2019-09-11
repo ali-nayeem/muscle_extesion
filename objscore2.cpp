@@ -3,6 +3,9 @@
 #include "profile.h"
 #include "objscore.h"
 #include "params.h"
+#include "manutility.h"
+#include "textfile.h"
+#include <sstream>
 
 #define TRACE			0
 #define TRACE_SEQPAIR	0
@@ -227,14 +230,33 @@ SCORE ScoreSeqPairGaps(const MSA &msa1, unsigned uSeqIndex1,
 		}
 	return scoreGaps;
 	}
-
+SCORE manBypass(const MSA &msa)
+{
+    return calculateSimgSimngScore(msa, g_simgWeight);
+//    std::ostringstream strs;
+//    strs << g_simgWeight;
+//    std::string strWeight = strs.str();
+//    std::string filename = "tempOut"+strWeight;
+//    TextFile out(filename.c_str(),true);
+//    msa.ToFASTAFile(out);
+//    out.Close();
+//    std::string cmd = "java -cp /Users/ali_nayeem/Projects/MSA/target/jMetalMSA1.2-1.0-SNAPSHOT-jar-with-dependencies.jar org.uma.jmetalmsa.score.impl.GetSimG_SimNG " + filename + " " + strWeight;
+//    std::string strScore = GetStdoutFromCommand(cmd);
+//    SCORE value = atof(strScore.c_str());
+//    printf("java=%lf\n", value);
+//    exit(0);
+//    return value;
+    //exit(0);
+}
 // The usual sum-of-pairs objective score: sum the score
 // of the alignment of each pair of sequences.
 SCORE ObjScoreSP(const MSA &msa, SCORE MatchScore[])
 	{
-    static int count = 0;
-    count++;
-    printf("Nayeem = %d, simg=%lf\n", count, g_simgWeight);
+    //static int count = 0;
+    //count++;
+    //printf("Nayeem = %d, simg=%lf\n", 0, g_simgWeight);
+    SCORE scoreSimgSimng = manBypass(msa);
+    return scoreSimgSimng;
 #if	TRACE
 	Log("==================ObjScoreSP==============\n");
 	Log("msa=\n");

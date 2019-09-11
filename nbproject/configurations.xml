@@ -150,6 +150,9 @@
       <in>vtml2.cpp</in>
       <in>writescorefile.cpp</in>
     </df>
+    <logicalFolder name="f1" displayName="Resource" projectFiles="true" root=".">
+      <itemPath>temp</itemPath>
+    </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
                    projectFiles="false"
@@ -157,7 +160,6 @@
       <itemPath>Makefile</itemPath>
       <itemPath>nbproject/private/launcher.properties</itemPath>
     </logicalFolder>
-    <itemPath>temp</itemPath>
   </logicalFolder>
   <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
   <sourceRootList>
@@ -167,10 +169,13 @@
   <confs>
     <conf name="Default" type="0">
       <toolsSet>
-        <compilerSet>GNU_Mac2|GNU</compilerSet>
+        <compilerSet>GNU_Brew_5|GNU</compilerSet>
         <dependencyChecking>false</dependencyChecking>
         <rebuildPropChanged>false</rebuildPropChanged>
       </toolsSet>
+      <flagsDictionary>
+        <element flagsID="0" commonFlags="-std=c++11"/>
+      </flagsDictionary>
       <codeAssistance>
       </codeAssistance>
       <makefileType>
@@ -185,301 +190,593 @@
           <preBuildCommand></preBuildCommand>
         </preBuild>
       </makefileType>
-      <item path="aligngivenpath.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="aligngivenpathsw.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="aligntwomsas.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="aligntwoprofs.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="aln.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="alpha.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="anchors.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="bittraceback.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="blosum62.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="blosumla.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="clust.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="cluster.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="clwwt.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="color.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="cons.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="diaglist.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="diffobjscore.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="diffpaths.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="difftrees.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="difftreese.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="distcalc.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="distfunc.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="distpwkimura.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="domuscle.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="dosp.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="dpreglist.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="drawtree.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="edgelist.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="enumopts.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="enumtostr.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="estring.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="fasta.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="fasta2.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="fastclust.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="fastdist.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="fastdistjones.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="fastdistkbit.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="fastdistkmer.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="fastdistmafft.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="fastdistnuc.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="fastscorepath2.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="finddiags.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="finddiagsn.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="glbalign.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="glbalign352.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="glbaligndiag.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="glbalignle.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="glbalignsimple.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="glbalignsp.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="glbalignspn.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="glbalignss.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="glbalndimer.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="globals.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="globalslinux.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="globalsosx.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="globalsother.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="globalswin32.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="gonnet.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="henikoffweight.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="henikoffweightpb.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="html.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="hydro.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="intmath.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="local.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="main.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="makerootmsa.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="makerootmsab.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="maketree.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="mhack.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="mpam200.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="msa.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="msa2.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="msadistkimura.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="msf.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="muscle.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="muscleout.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="nucmx.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="nwdasimple.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="nwdasimple2.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="nwdasmall.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="nwrec.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="nwsmall.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="objscore.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="objscore2.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="objscoreda.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="onexception.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="options.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="outweights.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="pam200mafft.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="params.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="phy.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="phy2.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="phy3.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="phy4.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="phyfromclust.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="phyfromfile.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="physeq.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="phytofile.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="posgap.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="ppscore.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="profdb.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="profile.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="profilefrommsa.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="progalign.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="progress.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="progressivealign.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="pwpath.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="readmx.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="realigndiffs.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="realigndiffse.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="refine.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="refinehoriz.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="refinesubfams.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="refinetree.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="refinetreee.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="refinevert.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="refinew.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="savebest.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="scoredist.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="scoregaps.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="scorehistory.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="scorepp.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="seq.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="seqvect.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="setblosumweights.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="setgscweights.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="setnewhandler.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="spfast.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="sptest.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="stabilize.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="subfam.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="subfams.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="sw.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="temp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="termgaps.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="textfile.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="threewaywt.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="tomhydro.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="traceback.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="tracebackopt.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="tracebacksw.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="treefrommsa.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="typetostr.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="upgma2.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="usage.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="validateids.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="vtml2.cpp" ex="false" tool="1" flavor2="4">
-      </item>
-      <item path="writescorefile.cpp" ex="false" tool="1" flavor2="4">
+      <item path="aligngivenpath.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="aligngivenpathsw.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="aligntwomsas.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="aligntwoprofs.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="aln.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="alpha.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="anchors.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="bittraceback.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="blosum62.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="blosumla.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="clust.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cluster.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="clwwt.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="color.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="cons.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="diaglist.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="diffobjscore.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="diffpaths.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="difftrees.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="difftreese.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="distcalc.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="distfunc.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="distpwkimura.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="domuscle.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="dosp.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="dpreglist.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="drawtree.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="edgelist.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="enumopts.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="enumtostr.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="estring.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="fasta.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="fasta2.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="fastclust.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="fastdist.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="fastdistjones.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="fastdistkbit.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="fastdistkmer.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="fastdistmafft.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="fastdistnuc.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="fastscorepath2.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="finddiags.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="finddiagsn.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="glbalign.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="glbalign352.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="glbaligndiag.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="glbalignle.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="glbalignsimple.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="glbalignsp.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="glbalignspn.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="glbalignss.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="glbalndimer.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="globals.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="globalslinux.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="globalsosx.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="globalsother.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="globalswin32.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="gonnet.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="henikoffweight.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="henikoffweightpb.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="html.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="hydro.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="intmath.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="local.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="makerootmsa.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="makerootmsab.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="maketree.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mhack.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mpam200.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="msa.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="msa2.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="msadistkimura.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="msf.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="muscle.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="muscleout.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="nucmx.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="nwdasimple.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="nwdasimple2.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="nwdasmall.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="nwrec.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="nwsmall.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="objscore.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="objscore2.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="objscoreda.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="onexception.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="options.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="outweights.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="pam200mafft.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="params.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="phy.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="phy2.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="phy3.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="phy4.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="phyfromclust.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="phyfromfile.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="physeq.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="phytofile.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="posgap.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ppscore.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="profdb.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="profile.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="profilefrommsa.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="progalign.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="progress.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="progressivealign.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="pwpath.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="readmx.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="realigndiffs.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="realigndiffse.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="refine.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="refinehoriz.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="refinesubfams.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="refinetree.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="refinetreee.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="refinevert.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="refinew.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="savebest.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="scoredist.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="scoregaps.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="scorehistory.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="scorepp.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="seq.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="seqvect.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="setblosumweights.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="setgscweights.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="setnewhandler.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="spfast.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="sptest.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="stabilize.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="subfam.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="subfams.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="sw.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="termgaps.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="textfile.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="threewaywt.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="tomhydro.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="traceback.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="tracebackopt.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="tracebacksw.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="treefrommsa.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="typetostr.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="upgma2.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="usage.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="validateids.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="vtml2.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="writescorefile.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
       </item>
     </conf>
   </confs>

@@ -9,7 +9,8 @@
 # On OSX, using -static gives the error "ld: can't locate file for: -lcrt0.o",
 # this is fixed by deleting "-static" from the LDLIBS line.
 
-CFLAGS = -g -gdwarf-3#-O3 -funroll-loops -Winline -DNDEBUG=1
+#CFLAGS = -O3 -funroll-loops -Winline -DNDEBUG=1 -std=c++11
+CFLAGS = -g -gdwarf-3 -std=c++11
 LDLIBS = -lm #-static
 # LDLIBS = -lm
 
@@ -19,7 +20,7 @@ EXE =
 RM = rm -f
 CP = cp
 
-GPP = g++-mp-5
+GPP = g++-6
 LD = $(GPP) $(CFLAGS)
 CPP = $(GPP) -c $(CFLAGS) 
 

@@ -118,6 +118,7 @@
       <in>makerootmsa.cpp</in>
       <in>makerootmsab.cpp</in>
       <in>maketree.cpp</in>
+      <in>manutility.h</in>
       <in>mhack.cpp</in>
       <in>mpam200.cpp</in>
       <in>msa.cpp</in>
@@ -216,7 +217,6 @@
       <in>vtml2.cpp</in>
       <in>writescorefile.cpp</in>
     </df>
-    <itemPath>temp</itemPath>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
