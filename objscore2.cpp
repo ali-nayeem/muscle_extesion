@@ -20,6 +20,7 @@ extern SCOREMATRIX NUC_SP;
 extern float g_simgWeight;
 extern float g_simngWeight;
 extern float g_muscleSpWeight;
+extern float g_gapWeight;
 
 SCORE g_SPScoreLetters;
 SCORE g_SPScoreGaps;
@@ -312,10 +313,10 @@ SCORE ObjScoreSP_original(const MSA &msa, SCORE MatchScore[])
 
 SCORE manBypass(const MSA &msa,SCORE MatchScore[])
 {
-	//printf("simg=%lf  simng=%lf  osp=%lf \n", g_simgWeight, g_simngWeight, g_muscleSpWeight);
-	//SCORE sp = 1.0 / ( 1.0 + exp( ObjScoreSP_original(msa, MatchScore)) );
-	SCORE sp = ObjScoreSP_original(msa, MatchScore);
-    return calculateSimgSimngScore(msa, g_simgWeight, g_simngWeight) + sp * g_muscleSpWeight ;
+	printf("simg=%lf  simng=%lf  osp=%lf gap=%lf \n", g_simgWeight, g_simngWeight, g_muscleSpWeight,g_gapWeight);
+	SCORE sp = 1.0 / ( 1.0 + exp( - ObjScoreSP_original(msa, MatchScore)) );
+	//SCORE sp = ObjScoreSP_original(msa, MatchScore);
+    return calculateSimgSimngScore(msa, g_simgWeight, g_simngWeight) + sp * g_muscleSpWeight + calculateGapScore(msa, g_gapWeight);
 //    std::ostringstream strs;
 //    strs << g_simgWeight;
 //    std::string strWeight = strs.str();

@@ -141,6 +141,7 @@ SCORE g_scoreGapOpen = fInsane;
 float g_simgWeight = -1;
 float g_simngWeight = -1;
 float g_muscleSpWeight = -1;
+float g_gapWeight = -1;
 //------------------------------------------------------
 
 static unsigned atou(const char *s)
@@ -604,6 +605,7 @@ void SetParams()
         FloatParam("simg", &g_simgWeight);
 		FloatParam("simng", &g_simngWeight);
 		FloatParam("osp", &g_muscleSpWeight);
+		FloatParam("gap", &g_gapWeight);
 
 	EnumParam("ObjScore", OBJSCORE_Opts, (int *) &g_ObjScore);
 	EnumParam("TermGaps", TERMGAPS_Opts, (int *) &g_TermGaps);

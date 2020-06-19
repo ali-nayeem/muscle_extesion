@@ -82,5 +82,32 @@ SCORE calculateSimgSimngScore(const MSA &msa, double simgWeight,double simngWeig
     return -1 * result;
 }
 
+
+SCORE calculateGapScore(const MSA &msa, double gapWeight)
+{
+    unsigned uColCount = msa.GetColCount();
+    unsigned uRowCount = msa.GetSeqCount();
+
+    double gapScoreSum = 0.0;
+
+    for(unsigned i = 0; i < uRowCount ; i++)
+    {
+        unsigned gapCount = 0;
+        unsigned nonGapCount = 0;
+        for(unsigned j = 0; j < uColCount; j++)
+        {
+            if(msa.IsGap(i,j))
+                gapCount++;
+            else
+                nonGapCount++; 
+        }
+        gapScoreSum += 1.0 * gapCount / nonGapCount;
+
+    }
+
+    return -gapWeight * ( 1.0 * gapScoreSum / uRowCount ) ;
+
+}
+
 #endif /* MANUTILITY_H */
 

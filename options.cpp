@@ -84,6 +84,7 @@ static VALUE_OPT ValueOpts[] =
         "simg",                         0,
 		"simng",                         0,
 		"osp",                         0,
+		"gap",                         0,
 	};
 static int ValueOptCount = sizeof(ValueOpts)/sizeof(ValueOpts[0]);
 
