@@ -139,6 +139,8 @@ float g_dMinBestColScore = fInsane;
 float g_dMinSmoothScore = fInsane;
 SCORE g_scoreGapOpen = fInsane;
 float g_simgWeight = -1;
+float g_simngWeight = -1;
+float g_muscleSpWeight = -1;
 //------------------------------------------------------
 
 static unsigned atou(const char *s)
@@ -600,6 +602,8 @@ void SetParams()
 	FloatParam("SUEFF", &g_dSUEFF);
 	FloatParam("HydroFactor", &g_dHydroFactor);
         FloatParam("simg", &g_simgWeight);
+		FloatParam("simng", &g_simngWeight);
+		FloatParam("osp", &g_muscleSpWeight);
 
 	EnumParam("ObjScore", OBJSCORE_Opts, (int *) &g_ObjScore);
 	EnumParam("TermGaps", TERMGAPS_Opts, (int *) &g_TermGaps);

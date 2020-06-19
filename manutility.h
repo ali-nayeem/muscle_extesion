@@ -41,7 +41,7 @@ std::string GetStdoutFromCommand(std::string cmd) {
     return data;
 }
 
-SCORE calculateSimgSimngScore(const MSA &msa, double simgWeight)
+SCORE calculateSimgSimngScore(const MSA &msa, double simgWeight,double simngWeight)
 {
     unsigned uColCount = msa.GetColCount();
     unsigned uRowCount = msa.GetSeqCount();
@@ -77,7 +77,7 @@ SCORE calculateSimgSimngScore(const MSA &msa, double simgWeight)
     }
     simg = simg / gapColCount;
     simng = simng / nonGapColCount;
-    SCORE result = simg * simgWeight + simng * (1 - simgWeight);
+    SCORE result = simg * simgWeight + simng * simngWeight;
     //printf("c++=%lf, %lf, %lf\n", simg, simng, result);
     return -1 * result;
 }
