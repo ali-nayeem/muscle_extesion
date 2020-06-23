@@ -30,12 +30,13 @@
 *.exe
 *.out
 *.app
+muscle
 
 # IDE
+Makefile
 .idea
 .vscode/
 nbproject/
-Makefile
 muscle.dSYM/
 
 # OSX

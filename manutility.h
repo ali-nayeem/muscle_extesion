@@ -75,8 +75,8 @@ SCORE calculateSimgSimngScore(const MSA &msa, double simgWeight,double simngWeig
             simng += 1.0 * max / uRowCount;
         }
     }
-    simg = simg / gapColCount;
-    simng = simng / nonGapColCount;
+    simg = simg / gapColCount; //to scale below 1.0
+    simng = simng / nonGapColCount; //to scale below 1.0
     SCORE result = simg * simgWeight + simng * simngWeight;
     //printf("c++=%lf, %lf, %lf\n", simg, simng, result);
     return -1 * result; //possibly a bug from MAN: both simg and simng are maximizing, seems -1 not necessary
@@ -101,11 +101,11 @@ SCORE calculateGapScore(const MSA &msa, double gapWeight)
             else
                 nonGapCount++; 
         }
-        gapScoreSum += 1.0 * gapCount / nonGapCount;
+        gapScoreSum += 1.0 * gapCount / nonGapCount; //divide by nonGapCount is used to scale below 1.0
 
     }
 
-    return -gapWeight * ( 1.0 * gapScoreSum / uRowCount ) ;
+    return -gapWeight * ( 1.0 * gapScoreSum / uRowCount ) ; //averaging used to scale below 1.0
 
 }
 
