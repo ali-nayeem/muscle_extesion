@@ -79,7 +79,7 @@ SCORE calculateSimgSimngScore(const MSA &msa, double simgWeight,double simngWeig
     simng = simng / nonGapColCount;
     SCORE result = simg * simgWeight + simng * simngWeight;
     //printf("c++=%lf, %lf, %lf\n", simg, simng, result);
-    return -1 * result;
+    return -1 * result; //possibly a bug from MAN: both simg and simng are maximizing, seems -1 not necessary
 }
 
 
