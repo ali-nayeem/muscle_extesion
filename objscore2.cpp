@@ -313,10 +313,16 @@ SCORE ObjScoreSP_original(const MSA &msa, SCORE MatchScore[])
 
 SCORE manBypass(const MSA &msa,SCORE MatchScore[])
 {
-	printf("simg=%lf  simng=%lf  osp=%lf gap=%lf \n", g_simgWeight, g_simngWeight, g_muscleSpWeight,g_gapWeight);
-	SCORE sp = 1.0 / ( 1.0 + exp( - ObjScoreSP_original(msa, MatchScore)) );
-	//SCORE sp = ObjScoreSP_original(msa, MatchScore);
-    return calculateSimgSimngScore(msa, g_simgWeight, g_simngWeight) + sp * g_muscleSpWeight + calculateGapScore(msa, g_gapWeight);
+	//printf("simg=%lf  simng=%lf  osp=%lf gap=%lf \n", g_simgWeight, g_simngWeight, g_muscleSpWeight,g_gapWeight);
+
+	vector<double> SimgSimng = calculateSimgSimngScore(msa);
+	double simg = softsign(SimgSimng[0]);
+	double simng = softsign(SimgSimng[1]);
+	double sp = softsign(ObjScoreSP_original(msa, MatchScore));
+	double gap = softsign(100 + calculateGapScore(msa));
+
+    return simg*g_simngWeight + simng*g_simngWeight + sp * g_muscleSpWeight - gap * g_gapWeight;
+	
 //    std::ostringstream strs;
 //    strs << g_simgWeight;
 //    std::string strWeight = strs.str();

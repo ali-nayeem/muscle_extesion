@@ -19,10 +19,11 @@
 #include <string>
 #include<unordered_map>
 #include <algorithm>
+#include <vector>
 
 #include "msa.h"
 
-//using namespace std;
+using namespace std;
 
 std::string GetStdoutFromCommand(std::string cmd) {
 
@@ -41,7 +42,12 @@ std::string GetStdoutFromCommand(std::string cmd) {
     return data;
 }
 
-SCORE calculateSimgSimngScore(const MSA &msa, double simgWeight,double simngWeight)
+double softsign(double x)
+{
+    return x / (1.0 + abs(x));
+}
+
+vector<double> calculateSimgSimngScore(const MSA &msa)
 {
     unsigned uColCount = msa.GetColCount();
     unsigned uRowCount = msa.GetSeqCount();
@@ -75,15 +81,19 @@ SCORE calculateSimgSimngScore(const MSA &msa, double simgWeight,double simngWeig
             simng += 1.0 * max / uRowCount;
         }
     }
-    simg = simg / gapColCount; //to scale below 1.0
-    simng = simng / nonGapColCount; //to scale below 1.0
-    SCORE result = simg * simgWeight + simng * simngWeight;
+    vector<double> ret; //two values to be returned, STL pair could be used as well
+    ret.push_back(simg);
+    ret.push_back(simng);
+    return ret;
+    // simg = simg / gapColCount; //to scale below 1.0
+    // simng = simng / nonGapColCount; //to scale below 1.0
+    // SCORE result = simg * simgWeight + simng * simngWeight;
     //printf("c++=%lf, %lf, %lf\n", simg, simng, result);
-    return -1 * result; //possibly a bug from MAN: both simg and simng are maximizing, seems -1 not necessary
+    //return -1 * result; //possibly a bug from MAN: both simg and simng are maximizing, seems -1 not necessary
 }
 
 
-SCORE calculateGapScore(const MSA &msa, double gapWeight)
+double calculateGapScore(const MSA &msa)
 {
     unsigned uColCount = msa.GetColCount();
     unsigned uRowCount = msa.GetSeqCount();
@@ -101,11 +111,13 @@ SCORE calculateGapScore(const MSA &msa, double gapWeight)
             else
                 nonGapCount++; 
         }
-        gapScoreSum += 1.0 * gapCount / nonGapCount; //divide by nonGapCount is used to scale below 1.0
+        gapScoreSum += gapCount;
+        //gapScoreSum += 1.0 * gapCount / nonGapCount; //divide by nonGapCount is used to scale below 1.0
 
     }
 
-    return -gapWeight * ( 1.0 * gapScoreSum / uRowCount ) ; //averaging used to scale below 1.0
+    return gapScoreSum;
+    //return -gapWeight * ( 1.0 * gapScoreSum / uRowCount ) ; //averaging used to scale below 1.0
 
 }
 
