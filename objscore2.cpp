@@ -311,7 +311,7 @@ SCORE ObjScoreSP_original(const MSA &msa, SCORE MatchScore[])
 	}
 
 
-SCORE manBypass(const MSA &msa,SCORE MatchScore[])
+double manBypass(const MSA &msa,SCORE MatchScore[])
 {
 	//printf("simg=%lf  simng=%lf  osp=%lf gap=%lf \n", g_simgWeight, g_simngWeight, g_muscleSpWeight,g_gapWeight);
 
@@ -319,9 +319,9 @@ SCORE manBypass(const MSA &msa,SCORE MatchScore[])
 	double simg = softsign(SimgSimng[0]);
 	double simng = softsign(SimgSimng[1]);
 	double sp = softsign(ObjScoreSP_original(msa, MatchScore));
-	double gap = softsign(100 + calculateGapScore(msa));
+	double gap = softsign(100 + 1.0/calculateGapScore(msa)); //converting GapScore into maximization by inverting
 
-    return simg*g_simngWeight + simng*g_simngWeight + sp * g_muscleSpWeight - gap * g_gapWeight;
+    return simg*g_simngWeight + simng*g_simngWeight + sp * g_muscleSpWeight + gap * g_gapWeight; //now everyone maximization
 	
 //    std::ostringstream strs;
 //    strs << g_simgWeight;
@@ -340,12 +340,12 @@ SCORE manBypass(const MSA &msa,SCORE MatchScore[])
 }
 // The usual sum-of-pairs objective score: sum the score
 // of the alignment of each pair of sequences.
-SCORE ObjScoreSP(const MSA &msa, SCORE MatchScore[])
+double ObjScoreSP(const MSA &msa, SCORE MatchScore[])
 	{
     //static int count = 0;
     //count++;
     //printf("Nayeem = %d, simg=%lf\n", 0, g_simgWeight);
-    SCORE scoreSimgSimng = manBypass(msa,MatchScore);
+    double scoreSimgSimng = manBypass(msa,MatchScore);
     return scoreSimgSimng;
 #if	TRACE
 	Log("==================ObjScoreSP==============\n");

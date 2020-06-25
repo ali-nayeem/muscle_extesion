@@ -47,7 +47,7 @@ double softsign(double x)
     return x / (1.0 + abs(x));
 }
 
-vector<double> calculateSimgSimngScore(const MSA &msa)
+vector<double> calculateSimgSimngScore(const MSA &msa) //both maximization
 {
     unsigned uColCount = msa.GetColCount();
     unsigned uRowCount = msa.GetSeqCount();
@@ -93,7 +93,7 @@ vector<double> calculateSimgSimngScore(const MSA &msa)
 }
 
 
-double calculateGapScore(const MSA &msa)
+double calculateGapScore(const MSA &msa) //minimization
 {
     unsigned uColCount = msa.GetColCount();
     unsigned uRowCount = msa.GetSeqCount();

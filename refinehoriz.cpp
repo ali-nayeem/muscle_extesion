@@ -97,8 +97,8 @@ static bool TryRealign(MSA &msaIn, const Tree &tree, const unsigned Leaves1[],
 	//const SCORE scoreAfter = ObjScoreIds(msaRealigned, Ids1, uCount1, Ids2, uCount2);
 	//Log("Diff = %.3g %.3g\n", scoreDiff, scoreAfter - scoreBefore);
 #else
-	const SCORE scoreBefore = ObjScoreIds(msaIn, Ids1, uCount1, Ids2, uCount2);
-	const SCORE scoreAfter = ObjScoreIds(msaRealigned, Ids1, uCount1, Ids2, uCount2);
+	const double scoreBefore = ObjScoreIds(msaIn, Ids1, uCount1, Ids2, uCount2);
+	const double scoreAfter = ObjScoreIds(msaRealigned, Ids1, uCount1, Ids2, uCount2);
 
 	bool bAccept = (scoreAfter > scoreBefore);
 
