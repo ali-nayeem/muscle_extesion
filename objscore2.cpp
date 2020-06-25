@@ -6,6 +6,7 @@
 #include "manutility.h"
 #include "textfile.h"
 #include <sstream>
+#include <numeric>
 
 #define TRACE			0
 #define TRACE_SEQPAIR	0
@@ -314,14 +315,22 @@ SCORE ObjScoreSP_original(const MSA &msa, SCORE MatchScore[])
 double manBypass(const MSA &msa,SCORE MatchScore[])
 {
 	//printf("simg=%lf  simng=%lf  osp=%lf gap=%lf \n", g_simgWeight, g_simngWeight, g_muscleSpWeight,g_gapWeight);
-
-	vector<double> SimgSimng = calculateSimgSimngScore(msa);
-	double simg = softsign(SimgSimng[0]);
-	double simng = softsign(SimgSimng[1]);
-	double sp = softsign(ObjScoreSP_original(msa, MatchScore));
-	double gap = softsign(100 + 1.0/calculateGapScore(msa)); //converting GapScore into maximization by inverting
-
-    return simg*g_simngWeight + simng*g_simngWeight + sp * g_muscleSpWeight + gap * g_gapWeight; //now everyone maximization
+	vector<float> weightVector{g_simgWeight, g_simngWeight, g_muscleSpWeight, g_gapWeight}; //weight: Simg, Simng, SP, Gap
+	vector<double> objVector = calculateSimgSimngScore(msa); //Simg, Simng
+	objVector.push_back(ObjScoreSP_original(msa, MatchScore)); //Simg, Simng, SP
+	//find which obj has the max. digit => maxDigit
+	unsigned maxDigit = calculateMaxDigitCount(objVector);
+	objVector.push_back(1.0/calculateGapScore(msa)); //Simg, Simng, SP, Gap => converted into maximization by inverting
+	double base = pow(10, maxDigit);
+	std::transform(objVector.begin(), objVector.end(), objVector.begin(), [&](double x){return(x+base);});
+	std::transform(objVector.begin(), objVector.end(), objVector.begin(), [&](double x){return(softsign(x));});
+	// double simg = softsign(SimgSimng[0]);
+	// double simng = softsign(SimgSimng[1]);
+	// double sp = softsign(ObjScoreSP_original(msa, MatchScore));
+	// double gap = softsign(100 + 1.0/calculateGapScore(msa)); //converting GapScore into maximization by inverting
+	double wSum;
+	wSum = inner_product(objVector.begin(), objVector.end(), weightVector.begin(), 0.0); 
+    return wSum;//simg*g_simgWeight + simng*g_simngWeight + sp * g_muscleSpWeight + gap * g_gapWeight; //now everyone maximization
 	
 //    std::ostringstream strs;
 //    strs << g_simgWeight;

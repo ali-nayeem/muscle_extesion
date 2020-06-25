@@ -47,6 +47,34 @@ double softsign(double x)
     return x / (1.0 + abs(x));
 }
 
+unsigned countDigit(unsigned num)
+{
+    unsigned count = 0;
+    while(num != 0)
+    {
+        /* Increment digit count */
+        count++;
+        /* Remove last digit of 'num' */
+        num /= 10;
+    } 
+    return count;
+}
+
+vector<unsigned> calculateDigitCount(vector<double> objVec)
+{
+    vector<unsigned> digVec;
+    for (size_t i = 0; i < objVec.size(); i++)
+    {
+        digVec.push_back(countDigit((unsigned)objVec[i]));
+    }  
+    return digVec;
+}
+
+unsigned calculateMaxDigitCount(vector<double> objVec)
+{
+    //vector<unsigned> digVec = calculateDigitCount(objVec);
+    return countDigit((unsigned) *max_element(objVec.begin(), objVec.end()) ) ;
+}
 vector<double> calculateSimgSimngScore(const MSA &msa) //both maximization
 {
     unsigned uColCount = msa.GetColCount();
