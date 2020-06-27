@@ -142,6 +142,7 @@ float g_simgWeight = -1;
 float g_simngWeight = -1;
 float g_muscleSpWeight = -1;
 float g_gapWeight = -1;
+unsigned g_agg = -1;
 //------------------------------------------------------
 
 static unsigned atou(const char *s)
@@ -594,6 +595,7 @@ void SetParams()
 	UintParam("DiagMargin", &g_uDiagMargin);
 	UintParam("DiagBreak", &g_uMaxDiagBreak);
 	UintParam("MaxSubFam", &g_uMaxSubFamCount);
+		UintParam("agg", &g_agg);
 
 	UintParam("Hydro", &g_uHydrophobicRunLength);
 	FlagParam("TomHydro", &g_bTomHydro, true);
