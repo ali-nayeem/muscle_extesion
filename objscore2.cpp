@@ -6,7 +6,6 @@
 #include "manutility.h"
 #include "textfile.h"
 #include <sstream>
-#include <numeric>
 
 #define TRACE			0
 #define TRACE_SEQPAIR	0
@@ -328,9 +327,9 @@ double manBypass(const MSA &msa,SCORE MatchScore[])
 	// double simng = softsign(SimgSimng[1]);
 	// double sp = softsign(ObjScoreSP_original(msa, MatchScore));
 	// double gap = softsign(100 + 1.0/calculateGapScore(msa)); //converting GapScore into maximization by inverting
-	double wSum;
-	wSum = inner_product(objVector.begin(), objVector.end(), weightVector.begin(), 0.0); 
-    return wSum;//simg*g_simgWeight + simng*g_simngWeight + sp * g_muscleSpWeight + gap * g_gapWeight; //now everyone maximization
+	double aggrScore = aggregationFunction(objVector, weightVector);
+	//wSum = inner_product(objVector.begin(), objVector.end(), weightVector.begin(), 0.0); 
+    return aggrScore;//simg*g_simgWeight + simng*g_simngWeight + sp * g_muscleSpWeight + gap * g_gapWeight; //now everyone maximization
 	
 //    std::ostringstream strs;
 //    strs << g_simgWeight;
