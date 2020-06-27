@@ -21,6 +21,7 @@ extern float g_simgWeight;
 extern float g_simngWeight;
 extern float g_muscleSpWeight;
 extern float g_gapWeight;
+extern unsigned g_agg;
 
 SCORE g_SPScoreLetters;
 SCORE g_SPScoreGaps;
@@ -327,7 +328,7 @@ double manBypass(const MSA &msa,SCORE MatchScore[])
 	// double simng = softsign(SimgSimng[1]);
 	// double sp = softsign(ObjScoreSP_original(msa, MatchScore));
 	// double gap = softsign(100 + 1.0/calculateGapScore(msa)); //converting GapScore into maximization by inverting
-	double aggrScore = aggregationFunction(objVector, weightVector);
+	double aggrScore = aggregationFunction(objVector, weightVector,g_agg);
 	//wSum = inner_product(objVector.begin(), objVector.end(), weightVector.begin(), 0.0); 
     return aggrScore;//simg*g_simgWeight + simng*g_simngWeight + sp * g_muscleSpWeight + gap * g_gapWeight; //now everyone maximization
 	
