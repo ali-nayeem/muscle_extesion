@@ -311,6 +311,33 @@ SCORE ObjScoreSP_original(const MSA &msa, SCORE MatchScore[])
 	return scoreTotal;
 	}
 
+double ObjScoreSP_simplified(const MSA &msa,SCORE MatchScore[])
+{
+	unsigned uColCount = msa.GetColCount();
+    unsigned uRowCount = msa.GetSeqCount();
+	double spScore = 0.0 ;
+	double gapPenalty = -4.0; //changeable
+	for(unsigned i = 0 ; i < uRowCount ; i++)
+	{
+		for(unsigned j = i + 1 ; j < uRowCount ; j++)
+		{
+			for(int k = 0; k < uColCount ; k++)
+			{
+				if(msa.IsGap(i,k) and msa.IsGap(j,k))
+					spScore += 1.0;
+				else if(msa.IsGap(i,k) or msa.IsGap(j,k))
+					spScore += gapPenalty;
+				else
+				{
+					unsigned uLetter1 = msa.GetLetterEx(i, k);
+					unsigned uLetter2 = msa.GetLetterEx(j, k);
+					spScore += (*g_ptrScoreMatrix)[uLetter1][uLetter2];
+				}
+			}
+		}
+	}
+	return spScore;
+}
 
 double manBypass(const MSA &msa,SCORE MatchScore[])
 {
