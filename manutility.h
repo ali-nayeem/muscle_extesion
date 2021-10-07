@@ -21,6 +21,7 @@
 #include <algorithm>
 #include <vector>
 #include <numeric>
+#include <cmath>
 
 #include "msa.h"
 
@@ -159,6 +160,7 @@ double aggregationFunction(vector<double> objVector, vector<float> & weightVecto
     }
     else
     {
+        //printf("In TCHEB");
         std::transform(objVector.begin(), objVector.end(), objVector.begin(), [&](double x){return(1.1 - x);});
         vector<double> result(objVector.size());
         std::transform(objVector.begin(), objVector.end(), weightVector.begin(), result.begin(), std::multiplies<double>());

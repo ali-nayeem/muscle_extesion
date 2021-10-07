@@ -117,7 +117,7 @@ static bool TryRealign(MSA &msaIn, const Tree &tree, const unsigned Leaves1[],
 	return bAccept;
 	}
 
-static void RefineHeightParts(MSA &msaIn, const Tree &tree,
+static void RefineHeightParts(MSA &msaIn, Tree &tree,
  const unsigned InternalNodeIndexes[], bool bReversed, bool bRight,
  unsigned uIter, 
  ScoreHistory &History,
@@ -171,6 +171,12 @@ static void RefineHeightParts(MSA &msaIn, const Tree &tree,
 		bool bAccepted = TryRealign(msaIn, tree, Leaves1, uCount1, Leaves2, uCount2,
 		  &scoreBefore, &scoreAfter, bLockLeft, bLockRight);
 		SetCurrentAlignment(msaIn);
+		
+		if(bAccepted)
+		{
+			printf("accepted\n");
+			RefineTree(msaIn, tree);
+		}
 
 		++g_uRefineHeightSubtree;
 		Progress(g_uRefineHeightSubtree, g_uRefineHeightSubtreeTotal);
@@ -199,7 +205,7 @@ static void RefineHeightParts(MSA &msaIn, const Tree &tree,
 	}
 
 // Return true if any changes made
-bool RefineHoriz(MSA &msaIn, const Tree &tree, unsigned uIters, bool bLockLeft,
+bool RefineHoriz(MSA &msaIn, Tree &tree, unsigned uIters, bool bLockLeft,
   bool bLockRight)
 	{
 #if	TRACE

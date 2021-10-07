@@ -227,8 +227,8 @@ SCORE GlobalAlignLE(const ProfPos *PA, unsigned uLengthA, const ProfPos *PB,
 void CalcThreeWayWeights(const Tree &tree, unsigned uNode1, unsigned uNode2,
   WEIGHT *Weights);
 SCORE GlobalAlignSS(const Seq &seqA, const Seq &seqB, PWPath &Path);
-bool RefineHoriz(MSA &msaIn, const Tree &tree, unsigned uIters, bool bLockLeft, bool bLockRight);
-bool RefineVert(MSA &msaIn, const Tree &tree, unsigned uIters);
+bool RefineHoriz(MSA &msaIn, Tree &tree, unsigned uIters, bool bLockLeft, bool bLockRight);
+bool RefineVert(MSA &msaIn, Tree &tree, unsigned uIters);
 SCORE GlobalAlignNoDiags(const ProfPos *PA, unsigned uLengthA, const ProfPos *PB,
   unsigned uLengthB, PWPath &Path);
 
