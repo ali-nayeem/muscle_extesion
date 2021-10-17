@@ -8,7 +8,7 @@
 TICKS g_ticksObjScore = 0;
 #endif
 
-SCORE ObjScore(const MSA &msa, const unsigned SeqIndexes1[],
+double ObjScore(const MSA &msa, const unsigned SeqIndexes1[],
   unsigned uSeqCount1, const unsigned SeqIndexes2[], unsigned uSeqCount2)
 	{
 #if	TIMING
@@ -47,7 +47,7 @@ SCORE ObjScore(const MSA &msa, const unsigned SeqIndexes1[],
 		break;
 		}
 
-	SCORE Score = 0;
+	double Score = 0;
 	switch (OS)
 		{
 	case OBJSCORE_SP:
@@ -103,7 +103,7 @@ SCORE ObjScoreIds(const MSA &msa, const unsigned Ids1[],
 	delete[] SeqIndexes1;
 	delete[] SeqIndexes2;
 #else
-	SCORE dObjScore = ObjScore(msa, SeqIndexes1, uCount1, SeqIndexes2, uCount2);
+	double dObjScore = ObjScore(msa, SeqIndexes1, uCount1, SeqIndexes2, uCount2);
 #endif
 #if	TIMING
 	TICKS t2 = GetClockTicks();

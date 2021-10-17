@@ -81,7 +81,11 @@ static VALUE_OPT ValueOpts[] =
  	"DistMx1",			0,
  	"DistMx2",			0,
 	"Weight",			0,
-        "simg",                         0,
+        "simg",                        0,
+		"simng",                       0,
+		"osp",                         0,
+		"gap",                         0,
+		"agg",						   0,
 	};
 static int ValueOptCount = sizeof(ValueOpts)/sizeof(ValueOpts[0]);
 

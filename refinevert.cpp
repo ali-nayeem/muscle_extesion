@@ -52,7 +52,7 @@ static void ColsToRanges(const unsigned BestCols[], unsigned uBestColCount,
 	}
 
 // Return true if any changes made
-bool RefineVert(MSA &msaIn, const Tree &tree, unsigned uIters)
+bool RefineVert(MSA &msaIn, Tree &tree, unsigned uIters)
 	{
 	bool bAnyChanges = false;
 

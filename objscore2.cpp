@@ -18,6 +18,10 @@ extern SCOREMATRIX VTML_SP;
 extern SCOREMATRIX VTML_SPNoCenter;
 extern SCOREMATRIX NUC_SP;
 extern float g_simgWeight;
+extern float g_simngWeight;
+extern float g_muscleSpWeight;
+extern float g_gapWeight;
+extern unsigned g_agg;
 
 SCORE g_SPScoreLetters;
 SCORE g_SPScoreGaps;
@@ -230,9 +234,132 @@ SCORE ScoreSeqPairGaps(const MSA &msa1, unsigned uSeqIndex1,
 		}
 	return scoreGaps;
 	}
-SCORE manBypass(const MSA &msa)
+
+SCORE ObjScoreSP_original(const MSA &msa, SCORE MatchScore[])
+	{
+    //static int count = 0;
+    //count++;
+    //printf("Nayeem = %d, simg=%lf\n", 0, g_simgWeight);
+    
+#if	TRACE
+	Log("==================ObjScoreSP==============\n");
+	Log("msa=\n");
+	msa.LogMe();
+#endif
+	g_SPScoreLetters = 0;
+	g_SPScoreGaps = 0;
+
+	if (0 != MatchScore)
+		{
+		const unsigned uColCount = msa.GetColCount();
+		for (unsigned uColIndex = 0; uColIndex < uColCount; ++uColIndex)
+			MatchScore[uColIndex] = 0;
+		}
+
+	const unsigned uSeqCount = msa.GetSeqCount();
+	SCORE scoreTotal = 0;
+	unsigned uPairCount = 0;
+#if	TRACE
+	Log("Seq1  Seq2     wt1     wt2    Letters         Gaps  Unwt.Score    Wt.Score       Total\n");
+	Log("----  ----  ------  ------  ----------  ----------  ----------  ----------  ----------\n");
+#endif
+	for (unsigned uSeqIndex1 = 0; uSeqIndex1 < uSeqCount; ++uSeqIndex1)
+		{
+		const WEIGHT w1 = msa.GetSeqWeight(uSeqIndex1);
+		for (unsigned uSeqIndex2 = uSeqIndex1 + 1; uSeqIndex2 < uSeqCount; ++uSeqIndex2)
+			{
+			const WEIGHT w2 = msa.GetSeqWeight(uSeqIndex2);
+			const WEIGHT w = w1*w2;
+
+			SCORE scoreLetters = ScoreSeqPairLetters(msa, uSeqIndex1, msa, uSeqIndex2);
+			SCORE scoreGaps = ScoreSeqPairGaps(msa, uSeqIndex1, msa, uSeqIndex2);
+			SCORE scorePair = scoreLetters + scoreGaps;
+			++uPairCount;
+
+			scoreTotal += w*scorePair;
+
+			g_SPScoreLetters += w*scoreLetters;
+			g_SPScoreGaps += w*scoreGaps;
+#if	TRACE
+			Log("%4d  %4d  %6.3f  %6.3f  %10.2f  %10.2f  %10.2f  %10.2f  %10.2f >%s >%s\n",
+			  uSeqIndex1,
+			  uSeqIndex2,
+			  w1,
+			  w2,
+			  scoreLetters,
+			  scoreGaps,
+			  scorePair,
+			  scorePair*w1*w2,
+			  scoreTotal,
+			  msa.GetSeqName(uSeqIndex1),
+			  msa.GetSeqName(uSeqIndex2));
+#endif
+			}
+		}
+#if	TEST_SPFAST
+	{
+	SCORE f = ObjScoreSPFast(msa);
+	Log("Fast  = %.6g\n", f);
+	Log("Brute = %.6g\n", scoreTotal);
+	if (BTEq(f, scoreTotal))
+		Log("Agree\n");
+	else
+		Log("** DISAGREE **\n");
+	}
+#endif
+//	return scoreTotal / uPairCount;
+	return scoreTotal;
+	}
+
+double ObjScoreSP_simplified(const MSA &msa,SCORE MatchScore[])
 {
-    return calculateSimgSimngScore(msa, g_simgWeight);
+	unsigned uColCount = msa.GetColCount();
+    unsigned uRowCount = msa.GetSeqCount();
+	double spScore = 0.0 ;
+	double gapPenalty = -4.0; //changeable
+	for(unsigned i = 0 ; i < uRowCount ; i++)
+	{
+		for(unsigned j = i + 1 ; j < uRowCount ; j++)
+		{
+			for(int k = 0; k < uColCount ; k++)
+			{
+				if(msa.IsGap(i,k) and msa.IsGap(j,k))
+					spScore += 1.0;
+				else if(msa.IsGap(i,k) or msa.IsGap(j,k))
+					spScore += gapPenalty;
+				else
+				{
+					unsigned uLetter1 = msa.GetLetterEx(i, k);
+					unsigned uLetter2 = msa.GetLetterEx(j, k);
+					spScore += (*g_ptrScoreMatrix)[uLetter1][uLetter2];
+				}
+			}
+		}
+	}
+	return spScore;
+}
+
+double manBypass(const MSA &msa,SCORE MatchScore[])
+{
+	//printf("simg=%lf  simng=%lf  osp=%lf gap=%lf \n", g_simgWeight, g_simngWeight, g_muscleSpWeight,g_gapWeight);
+	vector<float> weightVector{g_simgWeight, g_simngWeight, g_muscleSpWeight, g_gapWeight}; //weight: Simg, Simng, SP, Gap
+	vector<double> objVector = calculateSimgSimngScore(msa); //Simg, Simng
+	objVector.push_back(ObjScoreSP_original(msa, MatchScore)); //Simg, Simng, SP
+	//ObjScoreSP_simplified => mine, ObjScoreSP_original => muscle's original
+	//find which obj has the max. digit => maxDigit
+	unsigned maxDigit = calculateMaxDigitCount(objVector);
+	objVector.push_back(1.0/calculateGapScore(msa)); //Simg, Simng, SP, Gap => converted into maximization by inverting
+	double base = pow(10, maxDigit);
+	std::transform(objVector.begin(), objVector.end(), objVector.begin(), [&](double x){return(x+base);});
+	std::transform(objVector.begin(), objVector.end(), objVector.begin(), [&](double x){return(softsign(x));});
+	// double simg = softsign(SimgSimng[0]);
+	// double simng = softsign(SimgSimng[1]);
+	// double sp = softsign(ObjScoreSP_original(msa, MatchScore));
+	// double gap = softsign(100 + 1.0/calculateGapScore(msa)); //converting GapScore into maximization by inverting
+	double aggrScore = aggregationFunction(objVector, weightVector, g_agg);
+	//wSum = inner_product(objVector.begin(), objVector.end(), weightVector.begin(), 0.0); 
+    return aggrScore;//simg*g_simgWeight + simng*g_simngWeight + sp * g_muscleSpWeight + gap * g_gapWeight; //now everyone maximization
+	
 //    std::ostringstream strs;
 //    strs << g_simgWeight;
 //    std::string strWeight = strs.str();
@@ -250,12 +377,12 @@ SCORE manBypass(const MSA &msa)
 }
 // The usual sum-of-pairs objective score: sum the score
 // of the alignment of each pair of sequences.
-SCORE ObjScoreSP(const MSA &msa, SCORE MatchScore[])
+double ObjScoreSP(const MSA &msa, SCORE MatchScore[])
 	{
     //static int count = 0;
     //count++;
     //printf("Nayeem = %d, simg=%lf\n", 0, g_simgWeight);
-    SCORE scoreSimgSimng = manBypass(msa);
+    double scoreSimgSimng = manBypass(msa,MatchScore);
     return scoreSimgSimng;
 #if	TRACE
 	Log("==================ObjScoreSP==============\n");
