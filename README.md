@@ -15,7 +15,7 @@ weight vectors, popularly known as reference directions. Each weight vector aggr
 leads to one member of the final solution set.
 
 ## Simplified workflow
-We drive the iterative search process of MUSCLE with a total of four objectives directed by a 4D weight vector. Figure 1 depicts a high-level workflow for one weight vector, where the steps (3.4 to 3.6) inspired by the MO approach are marked as red. This workflow is executed for all weight vectors to get alternative solutions and can be performed independently in parallel. %As will be evident later, PMAO treats a solution better than the other based on the weighted-sum of four objective values instead of using ML score alone. 
+We drive the iterative search process of MUSCLE with a total of four objectives directed by a 4D weight vector. Figure 1 depicts a high-level workflow for one weight vector, where the steps (3.4 to 3.6) inspired by the MO approach are marked as red. This workflow is executed for all weight vectors to get alternative solutions and can be performed independently in parallel.
 Also note that, unlike original MUSCLE, we update the guide tree (step 3.6) each time a better MSA is obtained to intensify the effect of MO principles.
 
 <figure>
